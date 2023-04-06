@@ -40,6 +40,20 @@ robot_report:
     - edit
 use_templates: true
 use_context: true
+# digit-ruber terms component drcomp.owl
+components:
+  use_template: true
+  products:
+    - filename: drcomp.owl
+      use_template: true
+      template_options: --add-prefixes config/context.json
+      templates:
+        - digitrubber_terms.tsv
+    - filename: mycomp.owl
+      use_template: true
+      template_options: --add-prefixes config/context.json
+      templates:
+        - mytemplate.csv
 robot_java_args: '-Xmx8G'
 robot_opts: -vv
 # allow_equivalents can be all or asserted-only
