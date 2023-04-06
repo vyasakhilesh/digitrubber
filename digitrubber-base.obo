@@ -1,0 +1,14 @@
+format-version: 1.2
+data-version: digitrubber/releases/2023-04-06/digitrubber-base.owl
+date: 06:04:2023 08:42
+ontology: digitrubber/digitrubber-base
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/description "DigitRubber Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/title "DigitRubber Ontology" xsd:string
+property_value: owl:versionInfo "2023-04-06" xsd:string
+
+[Term]
+id: DIGITRUBBER:0000000
+name: root node
+

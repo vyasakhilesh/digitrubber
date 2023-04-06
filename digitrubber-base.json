@@ -1,0 +1,44 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/digitrubber/digitrubber-base.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/type",
+        "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "DigitRubber Ontology"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/licenses/unspecified"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "DigitRubber Ontology"
+      }, {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
+        "val" : "06:04:2023 08:42"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2023-04-06"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-06/digitrubber-base.json"
+    },
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/DIGITRUBBER_0000000",
+      "lbl" : "root node",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "lbl" : "description",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "lbl" : "license",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "lbl" : "title",
+      "type" : "PROPERTY"
+    } ]
+  } ]
+}

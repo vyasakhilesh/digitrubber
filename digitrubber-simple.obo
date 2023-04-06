@@ -1,0 +1,20 @@
+format-version: 1.2
+data-version: digitrubber/releases/2023-04-06/digitrubber-simple.owl
+date: 06:04:2023 08:43
+ontology: digitrubber/digitrubber-simple
+property_value: dcterms-license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/description "DigitRubber Ontology" xsd:string
+property_value: http://purl.org/dc/terms/title "DigitRubber Ontology" xsd:string
+property_value: owl:versionInfo "2023-04-06" xsd:string
+
+[Term]
+id: DIGITRUBBER:0000000
+name: root node
+
+[Typedef]
+id: dcterms-license
+name: license
+namespace: uberon
+xref: http://purl.org/dc/terms/license
+is_metadata_tag: true
+
