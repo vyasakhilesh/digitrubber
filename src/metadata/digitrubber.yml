@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/digitrubber
+
+idspace: DIGITRUBBER
+base_url: /obo/digitrubber
+
+products:
+- digitrubber.owl: https://raw.githubusercontent.com/vyasakhilesh/digitrubber/main/digitrubber.owl
+- digitrubber.obo: https://raw.githubusercontent.com/vyasakhilesh/digitrubber/main/digitrubber.obo
+
+term_browser: ontobee
+example_terms:
+- DIGITRUBBER_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/vyasakhilesh/digitrubber/v
+
+- prefix: /tracker/
+  replacement: https://github.com/vyasakhilesh/digitrubber/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/DIGITRUBBER?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/vyasakhilesh/digitrubber/main/
+
