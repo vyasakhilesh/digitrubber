@@ -29,9 +29,14 @@ import_group:
     - rdfs:label
     - IAO:0000115
   products:
-    - id: po
+    - id: bfo
+    - id: chebi
+    - id: iao
+    - id: obi
+#    - id: pato
+#    - id: po
     - id: ro
-    - id: pato
+    - id: uo
 robot_report:
   use_labels: true
   fail_on: ERROR
