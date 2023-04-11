@@ -30,13 +30,31 @@ import_group:
     - IAO:0000115
   products:
     - id: bfo
+      module_type: slme
+      module_type_slme: STAR
+      is_large: true
     - id: chebi
+      module_type: custom
+      is_large: true
+      use_gzipped: true
     - id: iao
+      module_type: slme
+      module_type_slme: STAR
+      is_large: true
     - id: obi
+      module_type: slme
+      module_type_slme: STAR
+      is_large: true
 #    - id: pato
 #    - id: po
     - id: ro
+      module_type: slme
+      module_type_slme: STAR
+      is_large: true
     - id: uo
+      module_type: slme
+      module_type_slme: STAR
+      is_large: true
 robot_report:
   use_labels: true
   fail_on: ERROR
@@ -59,6 +77,7 @@ components:
       template_options: --add-prefixes config/context.json
       templates:
         - mytemplate.csv
+    - filename: drbasic.owl
 robot_java_args: '-Xmx8G'
 robot_opts: -vv
 # allow_equivalents can be all or asserted-only

@@ -31,6 +31,7 @@
   
   <uri name="http://purl.obolibrary.org/obo/digitrubber/components/drcomp.owl" uri="components/drcomp.owl"/>
   
-
+  <uri name="http://purl.obolibrary.org/obo/digitrubber/components/drbasic.owl" uri="components/drbasic.owl"/>
+  
 </group>
 </catalog>

@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/digitrubber/components/drcomp.owl>
-<http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-06/components/drcomp.owl>
-Annotation(owl:versionInfo "2023-04-06")
+<http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-11/components/drcomp.owl>
+Annotation(owl:versionInfo "2023-04-11")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
@@ -1663,7 +1663,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00014
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000143> "stromverbrauch [hsh]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000143> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000144> (unit cost [hsh])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000144> (stückkosten [hsh])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000144> "The expenditure that incurs for acquiring a single unit of an entity sub-group in the system under investigation. Constitutes a factor of the maintenance cost, material cost, and storage cost group.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000144> "stückkosten [hsh]"@de)
@@ -1695,7 +1695,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00014
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000147> "gebäude"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000147> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000148> (building [ncit])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000148> (gebäude)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000148> "A structure that has a roof and walls and stands more or less permanently in one place.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DIGITRUBBER_000148> "http://purl.obolibrary.org/obo/NCIT_C80231")
@@ -1764,7 +1764,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00016
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000162> "tire building machine [hsh]"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000162> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000163> (schneidemaschine [hsh])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000163> (cutter [hsh])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000163> "A pneumtaic machine that cuts rubber materials. Constitutes an entity sub-group of the machine entity.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000163> "cutter [hsh]"@en)
@@ -2714,7 +2714,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00029
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000294> "Keltan 5470C [dik]"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000294> <http://purl.obolibrary.org/obo/CHEBI_60027>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000295> (Filler [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000295> (Füllstoff [dik])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000295> "solid compounding ingredient, in particulate form, which may be added in relatively large proportions to a rubber or rubber latex for technical or economic purposes")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000295> "Filler [dik]"@en)
@@ -2814,7 +2814,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00030
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000308> "Antilux 500‎ [dik]"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000308> <http://purl.obolibrary.org/obo/DIGITRUBBER_000307>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000309> (Aktivator [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000309> (Activator [dik])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000309> "compounding ingredient used in small proportions to increase the effectiveness of an accelerator")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000309> "Activator [dik]"@en)
@@ -3133,7 +3133,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00035
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000353> "Umdrehungen pro Minute [dik]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000353> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000355> (Festwalzen-Drehzahl [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000355> (Fixed Roll Speed [dik])
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000355> "Festwalzen-Drehzahl [dik]"@de)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000355> "Fixed Roll Speed [dik]"@en)
@@ -3235,7 +3235,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00036
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000368> "Fixed Roll Temperature [dik]"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000368> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000369> (Stellwalzen-Temperatur [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000369> (Setting Roll Temperature [dik])
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000369> "Setting Roll Temperature [dik]"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000369> "Stellwalzen-Temperatur [dik]"@de)
@@ -3375,7 +3375,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00038
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000388> "Rotor-Temperatur [dik]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000388> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000389> (Mixing Chamber Temperature Control Unit [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000389> (Mischkammer-Temperatursteuergerät [dik])
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000389> "Mischkammer-Temperatursteuergerät [dik]"@de)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000389> "Mixing Chamber Temperature Control Unit [dik]"@en)
@@ -3573,7 +3573,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00041
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000416> "Power [pato]"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000416> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000417> (Power [om])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000417> (Leistung [om])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000417> "Power is the time rate at which work is done. It is a derived quantity in the International System of Units. Power is energy divided by time.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DIGITRUBBER_000417> "http://www.ontology-of-units-of-measure.org/resource/om-2")
@@ -4274,7 +4274,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00051
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000514> "Gramm pro Kubikzentimeter [uo]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000514> <http://purl.obolibrary.org/obo/UO_1000084>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000515> (Viscosity Measurement Assay [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000515> (Prüfung zur Viskositätsmessung [dik])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000515> "An assay with the objective to produce information about the viscosity of the material entity that is the evaluant, by physically examining it or its proxies.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000515> "Prüfung zur Viskositätsmessung [dik]"@de)
@@ -4401,7 +4401,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00053
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000532> "Protokoll [edam]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000532> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000533> (Measurement Protocol [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000533> (Messprotokoll [dik])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000533> "A protocol which specifies the conditions, procedures, and instruments used for conducting a measurement assay in a sufficient level of detail to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the measurement assay.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000533> "Measurement Protocol [dik]"@en)
@@ -4435,7 +4435,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00053
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000537> "Viscosity Measurement Protocol [dik]"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000537> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000538> (Protokoll zur Mooney-Viskositätsmessung [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000538> (Mooney Viscosity Measurement Protocol [dik])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000538> "A viscosity measurement protocol for reliably reproducing the Mooney viscosity measurement assay.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000538> "Mooney Viscosity Measurement Protocol [dik]"@en)
@@ -4497,7 +4497,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00054
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000545> "Funktion [dik]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000545> <http://purl.obolibrary.org/obo/BFO_0000141>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000546> (Function [ncit])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000546> (Funktion [ncit])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000546> "The normal action performed by a structure or device.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DIGITRUBBER_000546> "http://purl.obolibrary.org/obo/ncit.owl")
@@ -5016,13 +5016,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_00061
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000618> "dimensionslose Einheit [ms]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000618> <http://purl.obolibrary.org/obo/BFO_0000019>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000619> (Massenanteil [dik])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000619> (Mass Percentage [dik])
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000619> "Mass Percentage [dik]"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DIGITRUBBER_000619> "Massenanteil [dik]"@de)
 SubClassOf(<http://purl.obolibrary.org/obo/DIGITRUBBER_000619> <http://purl.obolibrary.org/obo/UO_0000051>)
 
-# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000620> (Mass Percentage [uo])
+# Class: <http://purl.obolibrary.org/obo/DIGITRUBBER_000620> (Massenanteil [uo])
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DIGITRUBBER_000620> "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.\" [Wikipedia:Wikipedia]")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/DIGITRUBBER_000620> "http://purl.obolibrary.org/obo/uo.owl")

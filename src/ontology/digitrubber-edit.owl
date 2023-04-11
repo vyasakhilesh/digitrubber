@@ -31,6 +31,8 @@ Import(<http://purl.obolibrary.org/obo/digitrubber/imports/uo_import.owl>)
 
 Import(<http://purl.obolibrary.org/obo/digitrubber/components/drcomp.owl>)
 
+Import(<http://purl.obolibrary.org/obo/digitrubber/components/drbasic.owl>)
+
 Annotation(dcterms:description "DigitRubber Ontology")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "DigitRubber Ontology")
