@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/digitrubber/imports/uo_import.owl>
-<http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-11/imports/uo_import.owl>
-Annotation(owl:versionInfo "2023-04-11")
+<http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-13/imports/uo_import.owl>
+Annotation(owl:versionInfo "2023-04-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000001>))

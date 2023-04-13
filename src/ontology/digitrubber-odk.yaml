@@ -23,6 +23,7 @@ release_artefacts:
 primary_release: full
 release_date: true
 reasoner: ELK
+release_use_reasoner: false
 edit_format: owl
 import_group:
   annotation_properties:
@@ -81,4 +82,5 @@ components:
 robot_java_args: '-Xmx8G'
 robot_opts: -vv
 # allow_equivalents can be all or asserted-only
-allow_equivalents: asserted-only
+# allow_equivalents: asserted-only
+allow_equivalents: all
