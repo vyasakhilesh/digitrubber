@@ -16,9 +16,9 @@
 # these can be overwritten on the command line
 
 OBOBASE=                    http://purl.obolibrary.org/obo
-URIBASE=                    https://www.tib.eu/
+URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        digitrubber
-ONTBASE=                    https://www.tib.eu//digitrubber
+ONTBASE=                    http://purl.obolibrary.org/obo/digitrubber
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
@@ -411,7 +411,7 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 
 
 
-$(COMPONENTSDIR)/drcomp.owl: $(TEMPLATEDIR)/digitrubber_terms.tsv
+$(COMPONENTSDIR)/drcomp.owl: $(TEMPLATEDIR)/digitrubber_robot_v4.csv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi

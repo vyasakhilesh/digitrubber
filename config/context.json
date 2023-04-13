@@ -37,6 +37,7 @@
 		"swrlb": "http://www.w3.org/2003/11/swrlb#",
 		"terms": "http://purl.org/dc/terms/",
 		"uberon_core": "http://purl.obolibrary.org/obo/uberon/core#",
-		"ex": "http://example.com/"
+		"ex": "http://example.com/",
+		"DIGITRUBBER": "https://www.tib.eu/digitrubber#"
 	}
 }

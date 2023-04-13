@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://www.tib.eu//digitrubber/digitrubber-simple.owl#"
-     xml:base="https://www.tib.eu//digitrubber/digitrubber-simple.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/digitrubber/digitrubber-simple.owl#"
+     xml:base="http://purl.obolibrary.org/obo/digitrubber/digitrubber-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,12 +11,12 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://www.tib.eu//digitrubber/digitrubber-simple.owl">
-        <owl:versionIRI rdf:resource="https://www.tib.eu//digitrubber/releases/2023-04-13/digitrubber-simple.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/digitrubber/digitrubber-simple.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-13/digitrubber-simple.owl"/>
         <terms:description>DigitRubber Ontology</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>DigitRubber Ontology</terms:title>
-        <oboInOwl:date>13:04:2023 13:48</oboInOwl:date>
+        <oboInOwl:date>13:04:2023 14:40</oboInOwl:date>
         <owl:versionInfo>2023-04-13</owl:versionInfo>
     </owl:Ontology>
     
@@ -268,6 +268,25 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DIGITRUBBER_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DIGITRUBBER_0000000">
+        <rdfs:label xml:lang="en">root node</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
