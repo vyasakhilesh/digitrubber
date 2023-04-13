@@ -6,7 +6,7 @@ git_main_branch: main
 documentation:
   documentation_system: mkdocs
 # report_fail_on none or error
-report_fail_on: Error
+report_fail_on: error
 # namespaces: 
 #  - http://purl.obolibrary.org/obo/BTO_
 # Todo: license: CC-BY 4.0
@@ -21,6 +21,9 @@ release_artefacts:
   - full
   - simple
 primary_release: full
+public_release: "github_curl"
+public_release_assets:
+  - digitrubber.owl
 release_date: true
 reasoner: ELK
 release_use_reasoner: false
@@ -66,7 +69,6 @@ use_templates: true
 use_context: true
 # digit-ruber terms component drcomp.owl
 components:
-  use_template: true
   products:
     - filename: drcomp.owl
       use_template: true
