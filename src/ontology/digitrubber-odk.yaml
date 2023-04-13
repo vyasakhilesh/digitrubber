@@ -1,6 +1,6 @@
 id: digitrubber
-uribase: https://www.tib.eu/
-#uribase_suffix: ontology by default project id digitrubber
+# uribase: https://www.tib.eu
+# uribase_suffix: ontology by default project id digitrubber
 title: "DigitRubber Ontology"
 github_org: vyasakhilesh
 repo: digitrubber
@@ -76,7 +76,8 @@ components:
       use_template: true
       template_options: --add-prefixes config/context.json
       templates:
-        - digitrubber_terms.tsv
+#        - digitrubber_terms.tsv
+        - digitrubber_robot_v4.csv
     - filename: mycomp.owl
       use_template: true
       template_options: --add-prefixes config/context.json
