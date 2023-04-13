@@ -16,9 +16,9 @@
 # these can be overwritten on the command line
 
 OBOBASE=                    http://purl.obolibrary.org/obo
-URIBASE=                    http://purl.obolibrary.org/obo
+URIBASE=                    https://www.tib.eu/
 ONT=                        digitrubber
-ONTBASE=                    http://purl.obolibrary.org/obo/digitrubber
+ONTBASE=                    https://www.tib.eu//digitrubber
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
