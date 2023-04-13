@@ -13,14 +13,23 @@
         "val" : "DigitRubber Ontology"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "13:04:2023 12:58"
+        "val" : "13:04:2023 13:47"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
         "val" : "2023-04-13"
       } ],
       "version" : "https://www.tib.eu//digitrubber/releases/2023-04-13/digitrubber.json"
     },
-      "type" : "INDIVIDUAL"
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000002",
+      "lbl" : "example to be eventually removed",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "example to be eventually removed"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000078",
       "lbl" : "curation status specification",

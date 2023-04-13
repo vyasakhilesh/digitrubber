@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: https://www.tib.eu//digitrubber/releases/2023-04-13/digitrubber-base.owl
-date: 13:04:2023 12:58
+date: 13:04:2023 13:48
 ontology: https://www.tib.eu//digitrubber/digitrubber-base.owl
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "DigitRubber Ontology" xsd:string
