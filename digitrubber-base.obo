@@ -1,14 +1,4527 @@
 format-version: 1.2
-data-version: digitrubber/releases/2023-04-06/digitrubber-base.owl
-date: 06:04:2023 08:42
+data-version: digitrubber/releases/2023-04-13/digitrubber-base.owl
+date: 13:04:2023 09:14
 ontology: digitrubber/digitrubber-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "DigitRubber Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "DigitRubber Ontology" xsd:string
-property_value: owl:versionInfo "2023-04-06" xsd:string
+property_value: owl:versionInfo "2023-04-13" xsd:string
 
 [Term]
 id: DIGITRUBBER:0000000
 name: root node
+
+[Term]
+id: DIGITRUBBER:000001
+name: measurement quality [imr]
+def: "In relation to optical measuring methods a  rating for the precision of a reconstructed measurement object" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000002
+name: extrudate [imr]
+def: "definded rigid Object based as result of an  extrusion process" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000003
+name: geometry [imr]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000004
+name: geometry [geosparql]
+def: "A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS)." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.opengis.net/ont/geosparql#Geometry" xsd:string
+property_value: IAO:0000412 "http://www.opengis.net/ont/geosparql#" xsd:string
+
+[Term]
+id: DIGITRUBBER:000005
+name: point cloud [imr]
+def: "A gathering of individual points with an  with an unstructured spatial structure" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000006
+name: triangulation [imr]
+def: "geometrical method to determine distances  between to points" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000007
+name: millimeter [imr]
+is_a: UO:1000008
+
+[Term]
+id: DIGITRUBBER:000008
+name: millimeter [nist]
+def: "A length unit which is equal to one thousandth of a meter or 10^[-3] m.\" [NIST:NIST]" []
+comment: Imported from ontocomons, also present in TIB terminological service
+is_a: UO:1000008
+property_value: IAO:0000118 "mm MILLIMETER Millimeter millimeter(s) millimeter" xsd:string
+property_value: IAO:0000119 "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000016" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000009
+name: surface of extrudate [imr]
+def: "uppermost layer of the extrudate" []
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000010
+name: line in the surface of extrudate [imr]
+def: "cutout of a single line of the extrudate surface" []
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000011
+name: shape [imr]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000012
+name: shape [ncit]
+def: "The spatial arrangement of something as distinct from its substance." []
+is_a: BFO:0000141
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C25677" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000013
+name: shape [pato]
+def: "A morphological quality inhering in a bearer by virtue of the bearer's ratios of distances between its features (points, edges, surfaces and also holes etc)." []
+is_a: BFO:0000141
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/PATO_0000052" xsd:string
+property_value: IAO:0000412 "https://ontobee.org/ontology/PATO" xsd:string
+
+[Term]
+id: DIGITRUBBER:000014
+name: stitching process [imr]
+def: "use of different algorithms to determine the  exact allignment respectively the characteristik shared edges" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000015
+name: stitching method [imr]
+def: "alligning of single measurements to form a  connected/combined measurement" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000016
+name: distance between sensor and extrudate [imr]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000017
+name: extrudate norm [imr]
+def: "ideal dimensions and shape of the extrudate defined by the manufacturer" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000018
+name: standard deviation [imr]
+def: "a quantity expressing by how much the members of a group differ from the mean  value for the group " []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000019
+name: standard deviation [Wikipedia]
+def: "The standard deviation is a measure of the amount of variation or dispersion of a set of values. [Wikipedia]" []
+comment: from ontocommons skos:definition
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0002192" xsd:string
+property_value: IAO:0000412 "http://purl.allotrope.org/" xsd:string
+
+[Term]
+id: DIGITRUBBER:000020
+name: standard deviation [ncit]
+def: "A measure of the range of values in a set of numbers. Standard deviation is a statistic used as a measure of the dispersion or variation in a distribution, equal to the square root of the arithmetic mean of the squares of the deviations from the arithmetic mean." []
+comment: TIB terminological service
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C53322" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000021
+name: interior orientation [jade]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000022
+name: camera coordinate system [jade]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000023
+name: exterior orientation [jade]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000024
+name: camera calibration [jade]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000025
+name: bundle adjustment [jade]
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000026
+name: agent [ita]
+def: "An agent is a system that perceives its environment through sensors and can interact with it through actions." []
+is_a: BFO:0000023
+
+[Term]
+id: DIGITRUBBER:000027
+name: agent [ncti]
+def: "An active power or cause (as principle, substance, physical or biological factor, etc.) that produces a specific effect." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: BFO:0000023
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C1708" xsd:string
+
+[Term]
+id: DIGITRUBBER:000028
+name: approximation [ita]
+def: "Approximation is a technique for approximating a value using historical or available observations from the domain." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000029
+name: function approximation [ita]
+def: "Function approximation is a technique for estimating an unknown underlying function using historical or available observations from the domain." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000030
+name: reinforcement learning [ita]
+def: "Reinforcement learning is a set of machine learning methods in which an agent autonomously learns a strategy to maximize a reward. Algorithms follow the trail-and-error principle, thus try several strategies and repeat those with a higher reward. During the training the agent produces an input, while the target output is only known to a teacher. The teacher gives feedback to the agent in form of a reward." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000031
+name: library [ita]
+def: "Libraries in programming languages are collections of prewritten code that users can use to optimize tasks." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000032
+name: cluster analysis [ita]
+def: "Clustering or cluster analysis is a unsupervised machine learning technique, which groups the unlabelled dataset. It can be defined as a way of grouping the data points into different clusters, consisting of similar data points." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000033
+name: cluster analysis [ncti]
+def: "Methods for grouping objects into subsets such that those within each cluster are more closely related to one another than objects assigned to different clusters." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C15426" xsd:string
+
+[Term]
+id: DIGITRUBBER:000034
+name: data mining [ita]
+def: "A Database is a System for describing, storing and retrieving large amounts of data." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000035
+name: data mining [edam]
+def: "An information set with a regular structure. Although it can be applied to any set of information the term was invented to refer to computerized data, and is used almost exclusively in computing." []
+comment: http://edamontology.org
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://edamontology.org/topic_3473" xsd:string
+
+[Term]
+id: DIGITRUBBER:000036
+name: database [ita]
+def: "A Database is a System for describing, storing and retrieving large amounts of data." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000037
+name: database [ncti]
+def: "An information set with a regular structure. Although it can be applied to any set of information the term was invented to refer to computerized data, and is used almost exclusively in computing." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C15426" xsd:string
+
+[Term]
+id: DIGITRUBBER:000038
+name: deep learning [ita]
+def: "Deep learning is a class of machine learning algorithms that uses multiple layers to progressively extract higher-level features from the raw input. There is no universally agreed-upon threshold of depth that divides shallow learning from deep learning, but most researchers agree that deep learning involves CAP depth higher than 2. The CAP (credit assignment path) is the chain of transformations from input to output. CAPs describe potentially causal connections between input and output. For simple neural networks (feedforward neural networks) this treshhold is reached with at least two hidden layers." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000039
+name: deep learning [ncti]
+def: "A subset of machine learning that is part of the broader family of machine learning methodologies based on artificial neural networks. A deep neural network has multiple layers between input and output layers to progressively extract higher level features from the raw input. (After DeepAI Machine Learning Glossary and Terms) [ NCI ]" []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C176258" xsd:string
+
+[Term]
+id: DIGITRUBBER:000040
+name: input layer [ita]
+def: "The input layer of a neural network is composed of artificial input neurons, and brings the initial data into the system for further processing by subsequent layers of artificial neurons. The input layer is the very beginning of the workflow for the artificial neural network." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000041
+name: elastomers [ita]
+def: "Elastomers are dimensionally stable but elastically deformable plastics. They are producest by vulcanization of rubber." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000042
+name: output layer [ita]
+def: "The output layer in an artificial neural network is the last layer of neurons that produces given outputs for the program." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000043
+name: extrusion [ita]
+def: "Extrusion is a process used to create objects of a fixed cross-sectional profile by pushing material through a die of the desired cross-section." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000044
+name: extrusion [rex]
+def: "A transformation in which an atom or group Y connected to two other atoms or groups X and Z is lost from a molecule, leading to a product in which X is bonded to Z, e.g. X-Y-Z --> X-Z + Y." []
+comment: http://purl.obolibrary.org/obo/rex.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/REX_0000100" xsd:string
+
+[Term]
+id: DIGITRUBBER:000045
+name: extrusion [chmo]
+def: "A process used to create objects of a fixed cross-sectional profile by forcing or drawing a material through a die." []
+comment: http://purl.obolibrary.org/obo/chmo.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHMO_0001613" xsd:string
+
+[Term]
+id: DIGITRUBBER:000046
+name: hidden layer [ita]
+def: "In neural networks, a hidden layer is located between the input and output of the algorithm, in which the function applies weights to the inputs and directs them through an activation function as the output. In short, the hidden layers perform nonlinear transformations of the inputs entered into the network." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000047
+name: Industrie 4.0 [ita]
+def: "Industrie 4.0 is the intelligent networking of machines and processes in the industrial environment, with the help of information and communication technology and thus digitization of the industrial production." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000048
+name: rubber [ita]
+def: "Rubber is an elastic substance made either from the juice of particular tropical trees or artificially. It is raw material for car tires and other technical products." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000049
+name: Artificial Intelligence (AI) [ita]
+def: "Artifical intelligence is a branch of computer science dealing with the automation of intelligent behavior. Can be used in technical areas as methods of machine learning." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000050
+name: Artificial Intelligence (AI) [ncti]
+def: "Artificial intelligence is the branch of computer science that deals with writing computer programs that can solve problems creatively." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C16309" xsd:string
+
+[Term]
+id: DIGITRUBBER:000051
+name: machine learning [ita]
+def: "Machine learning is a sub-area of ​​artificial intelligence that deals with artificial systems that adapt their actions to external conditions so that their output is improved according to defined standards. For this purpose, algorithms build a model based on training data. The algorithms does not learn to memorize, but uses patterns and laws, so the systems can also process unknown data. The learning algorithms are divided into supervised learning, unsupervised learning and reinforcement learning." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000052
+name: machine learning [ncti]
+def: "A computing system (inspired by biological neural networks) that learns (progressively improves its ability) to do tasks by considering examples without task-specific programming. (After DeepAI Machine Learning Glossary and Terms)" []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C176231" xsd:string
+
+[Term]
+id: DIGITRUBBER:000053
+name: machine learning [obi]
+def: "A planned process in which statistical techniques are used to give computers the ability to learn about patterns in data, without being explicitly programmed. Learning is defined in this case as progressively improving performance on a specific task." []
+comment: http://purl.obolibrary.org/obo/obi.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/OBI_0002587" xsd:string
+
+[Term]
+id: DIGITRUBBER:000054
+name: machine learning [edam]
+def: "A topic concerning the application of artificial intelligence methods to algorithms, in order to create methods that can learn from data in order to generate an ouput, rather than relying on explicitly encoded information only." []
+comment: http://edamontology.org
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://edamontology.org/topic_3474" xsd:string
+
+[Term]
+id: DIGITRUBBER:000055
+name: microcontroller [ita]
+def: "Microcontrollers are compact integrated circuits designed to govern a specific operation in an embedded system. Typically a microcontroller includes a processor, memory and input/output peripherals on a single chip." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000056
+name: mixing [ita]
+def: "Mixing is the first of the three areas of an extrusion line, where the input material is homogenized and mixed. This occurs within a screw element through shearing and mixing of the input material." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000057
+name: mixing [chmo]
+def: "The combining of components, particles or layers into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process μst not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system." []
+comment: http://purl.obolibrary.org/obo/chmo.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHMO_0001685" xsd:string
+
+[Term]
+id: DIGITRUBBER:000058
+name: mixing [ncti]
+def: "To bring or combine together or with something else; add as an additional element or part." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C64925" xsd:string
+
+[Term]
+id: DIGITRUBBER:000059
+name: pattern recognition [ita]
+def: "Pattern recognition is the automated recognition of patterns and regularities in data. Pattern recognition has its origins in statistics and engineering; some modern approches include the use of machine learning, due to the increased availability of big data and a new abundance of processing power." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000060
+name: pattern recognition [ncti]
+def: "A branch of artificial intelligence concerned with the identification of visual or audio patterns by computers.For the computer to recognize the patterns, the patterns must be converted into digital signals and compared with patterns already stored in memory.Some uses of this technology are in character recognition, voice recognition, handwriting recognition, and robotics. (High-Tech Dictionary) [ NCI ]" []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C16961" xsd:string
+
+[Term]
+id: DIGITRUBBER:000061
+name: neural network [ita]
+def: "Artificial neural networks (ANNs) are based on a reduced set of concepts from biological neural systems. It is composed of different Layeres, an input layer, one or more hidden layers and an output layer. Each layer consists of several artificial neurons. The connections of the biological neuron are modeled in artificial neural networks as weights between the artificial neurons. A positive weight reflects an excitatory connection, while negative values mean inhibitory connections. An activation function controls the amplitude of the output. They can be used to model complex relationships between inputs and outputs or to find patterns in data. Thereby ANNs can be trained by machine learning techniques to approximate a function, when the complexity of the data or task makes the design of such function by hand impractical. Other tasks in which ANNs can be trained are classification, including pattern recognition, clustering and Data processing, including clustering." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000062
+name: neural network [ncti]
+def: "A computer algorithm to solve non-linear optimization problems. The algorithm was derived in analogy to the way the densely interconnected, parallel structure of the brain processes information." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C17429" xsd:string
+
+[Term]
+id: DIGITRUBBER:000063
+name: online characterisation [ita]
+def: "Online characterisation is the characterization of the material properties during the process and on the real process line in order to be able to react to fluctuations during production." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000064
+name: online optimization [ita]
+def: "In online optimization decisions are made directly in the real process section and without knowledge of future results. Also often the data of the problem instance is not complete." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000065
+name: optimization [ita]
+def: "Optimizers are algorithms or methods used to solve optimization problems by minimize an error function (loss function) or to maximize the efficiency of production. Optimizers are mathematical functions which are dependent on model's learnable parameters i.e Weights & Biases." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000066
+name: optimization [ncti]
+def: "An activity that attempts to find the best solution to a problem." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C78561" xsd:string
+
+[Term]
+id: DIGITRUBBER:000067
+name: Production-in-the-Loop [ita]
+def: "Production-in-the-Loop describes a method, in which information from the production process is continuously recorded and the process is adapted to the changing framework conditions on the basis of this information." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000068
+name: regression analysis [ita]
+def: "Regression analysis consists of a set of machine learning methods that allow us to predict a continuous outcome variable (y) based on the value of one or multiple predictor variables (x). Regression is a supervised learning technique, in which Algorithems build a mathematical Modell or equation that defines y as a funktion of x." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000069
+name: simulation environment [ita]
+def: "A simulation environment is a virtual environment that maps/models the real process. A simulation model thus makes it possible to train control tasks using learning algorithms offline, i.e. not on the real system but on the computer. Neural networks can be used to create such model." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000070
+name: test dataset [ita]
+def: "The test dataset is a subset of the dataset that is held back from training the model and given to the learning algorithm to test the trained model. Typically it consists of 20% to 30% of the original dataset. It is the sample of data used to provide an unbiased evaluation of a final model fit on the training dataset." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000071
+name: train dataset [ita]
+def: "The train dataset is a subset of the dataset that is given to the learning algorithm to train a model. Typically it consists of 70% to 80% of the original dataset. It is the sample of data used to fit the model." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000072
+name: supervised learning [ita]
+def: "Supervised learning is the machine learning task of learning a function that maps an input to an output based on example input-output pairs. It infers a function from labeled training data consisting of a set of training examples. In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (target)." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000073
+name: supervised learning [obi]
+def: "A machine learning process using a function that maps an input to an output based on example input-output pairs. It infers a function from labeled training data consisting of a set of training examples." []
+comment: http://purl.obolibrary.org/obo/obi.owl
+is_a: IAO:0000104
+property_value: IAO:0000118 "supervised machine learning" xsd:string
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/OBI_0002588" xsd:string
+
+[Term]
+id: DIGITRUBBER:000074
+name: unsupervised learning [ita]
+def: "Unsupervised learning is a type of algorithm that learns patterns from untagged data. The hope is that through mimicry, which is an important mode of learning in people, the machine is forced to build a compact internal representation of its world and then generate imaginative content from it. Unsupervised methods exhibit self-organization that captures patterns as probability densities or a combination of neural feature preferences." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000075
+name: unsupervised learning [obi]
+def: "A machine learning process that infers a function describing the structure of \"unlabeled\" data (i.e. data that has not been classified or categorized)." []
+comment: http://purl.obolibrary.org/obo/obi.owl
+is_a: IAO:0000104
+property_value: IAO:0000118 "unsupervised machine learning" xsd:string
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/OBI_0002589" xsd:string
+
+[Term]
+id: DIGITRUBBER:000076
+name: validation dataset [ita]
+def: "The validation dataset is the sample of data used to provide an unbiased evaluation of a model fit on the training dataset while tuning model hyperparameters. The evaluation becomes more biased as skill on the validation dataset is incorporated into the model configuration." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000077
+name: validation [ita]
+def: "Validation data is to \"validate\" that your neural network hasn't rather memorized your training data and has thus actually learned some meaningful aspects of the data so that the model can be later used (generalized) to unseen, held-out \"test dataset\"." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000078
+name: validation [ncti]
+def: "The act of validating; finding or testing the truth of something." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C16237" xsd:string
+
+[Term]
+id: DIGITRUBBER:000079
+name: validation [obi]
+def: "a planned process with objective to check that the accuracy or the quality of a claim or prediction satisfies some criteria and which is assessed by comparing with independent results" []
+comment: http://purl.obolibrary.org/obo/obi.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/OBI_0302911" xsd:string
+
+[Term]
+id: DIGITRUBBER:000080
+name: validation [edam]
+def: "Validate some data." []
+comment: http://edamontology.org
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://edamontology.org/operation_2428" xsd:string
+
+[Term]
+id: DIGITRUBBER:000081
+name: rolling [ita]
+def: "Rolling is the second of the three areas of the extrusion line. Where the material is homogenised." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000082
+name: twin screw extruder [ita]
+def: "Twin screw extruders have two screws, which have more shear and mixing capability than the single screw in a singel screw extruder. Depending on the direction of rotation of the screws, a distinction is made between counter-rotating and co-rotating twin-screw extruders." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000083
+name: Mixing temperature [ita]
+def: "Control variable that specifies at which temperature mixing takes place." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000084
+name: Stamp pressure [ita]
+def: "Rücksprache DIK" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000085
+name: rotation speed (Mixer) [ita]
+def: "Control value that specifies at which speed mixing takes place" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000086
+name: Mixing time [ita]
+def: "Control value that specifies how long mixing takes place" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000087
+name: Torque (mixer) [ita]
+def: "Measured variable that indicates how high the torque is during mixing." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000088
+name: Torque (mixer) [om]
+def: "Torque is the effectiveness of a force to produce rotation about an axis, measured by the product of the force and the perpendicular distance from the line of action of the force to the axis." []
+comment: http://www.ontology-of-units-of-measure.org/resource/om-2
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ontology-of-units-of-measure.org/resource/om-2/Torque" xsd:string
+
+[Term]
+id: DIGITRUBBER:000089
+name: Screw speed [ita]
+def: "Control variable that indicates how high the speed of the screw is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000090
+name: Screw torque [ita]
+def: "Measured variable that indicates how high the torque of the screw is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000091
+name: Tempering screw [ita]
+def: "Control variable that indicates how high the temperature of the screw is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000092
+name: Tempering Feed roller [ita]
+def: "Control variable that indicates how high the temperature of the feed roller is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000093
+name: Tempering cylinder [ita]
+def: "Control variable that indicates how high the temperature of the cylinder is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000094
+name: Cylinder pressure [ita]
+def: "Measured variable that indicates how high the pressure in the cylinder is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000095
+name: Tempering Tool [ita]
+def: "Control variable that indicates how high the temperature of the tool is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000096
+name: Tool pressure [ita]
+def: "Measured variable that indicates how high the pressure in the tool is during extrusion." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000097
+name: Near-surface mass temperature in the tool [ita]
+def: "Measured variable that indicates what the temperature is at the surface of the material." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000098
+name: Radial temperature profile of the mixture in the screw channel [ita]
+def: "Measured variable that indicates how the temperature is distributed radially over the screw channel." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000099
+name: Outlet surface [ita]
+def: "System parameter that indicates how large the outlet surface of the rubber is." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000100
+name: Throughput [ita]
+def: "The throughput indicates how many kilograms of rubber are extruded in a given unit of time." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000101
+name: collection of material entities [hsh]
+def: "A class of units in the system under study (e.g, machines, spare parts)" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000102
+name: factor [hsh]
+name: faktor [hsh]
+def: "A circumstance, fact, or influence that contributes to the costs associated with an entity (e.g., wages, number)" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000103
+name: factor [ncti]
+name: faktor [ncti]
+def: "Anything that contributes causally to a result." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C25506" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000104
+name: factor [proco]
+name: faktor [proco]
+def: "A data item that is a member of a minimal set of independent variables that can be used to model the dependent reponses in a set of related experiments." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/PROCO_0000005" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/proco.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000105
+name: factor [allotrope]
+name: faktor [allotrope]
+def: "A multiplicand in a mathematical product expression. [Allotrope]" []
+comment: skos:definition
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0000924>" xsd:string
+property_value: IAO:0000412 "http://purl.allotrope.org/ontologies" xsd:string
+
+[Term]
+id: DIGITRUBBER:000106
+name: cost [hsh]
+name: kosten [hsh]
+def: "Cumulative expression for the value of all costs groups within the system under study" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000107
+name: cost [ncti]
+name: kosten [ncti]
+def: "The amount paid, charged, or engaged to be paid, for purchasing goods, services and financial instruments." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C69088" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000108
+name: cost group [hsh]
+name: kostengruppe [hsh]
+def: "Cumulative expression for the value of overarching entity groups (e.g., human ressource, maintenance) within the system under study" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000109
+name: human ressource cost [hsh]
+name: personalkosten [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the human ressource cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000110
+name: maintenance cost [hsh]
+name: wartungskosten [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the maintenance cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000111
+name: energiekosten [hsh]
+name: energy cost [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the energy cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000112
+name: material cost [hsh]
+name: materialkosten [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the material cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000113
+name: lagerhaltungskosten [hsh]
+name: storage cost [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the storage cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000114
+name: production cost [hsh]
+name: produktionskosten [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the production cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000115
+name: investitionskosten [hsh]
+name: investment cost [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the investment cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000116
+name: abfallmanagementkosten [hsh]
+name: waste management cost [hsh]
+def: "A cost group for all cost values occuring from entity sub-groups in the waste management cost group and the associated factors" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000117
+name: turnover [hsh]
+name: umsatz [hsh]
+def: "A cost group for the total sales value generated in a time period X by the system under investigation" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000118
+name: machine [hsh]
+name: maschine [hsh]
+def: "An apparatus using mechanical power and having several parts, each with a definite function and together performing a particular task, required for operations in the system under investigation. Constitutes an entity in the maintenance cost, energy cost, production cost, investment cost and turnover cost group." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000119
+name: condition [hsh]
+name: zustand [hsh]
+def: "The state of an unit within an individual entity sub-group with regard to its working order (e.g., good, defective, not working)." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000120
+name: condition [ncti]
+name: zustand [ncti]
+def: "A state of being, such as a state of health." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C25457" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000121
+name: condition [shacl]
+name: zustand [shacl]
+def: "The shapes that the focus nodes need to conform to before a rule is executed on them." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.w3.org/ns/shacl#condition" xsd:string
+property_value: IAO:0000412 "http://www.w3.org/ns/shacl#" xsd:string
+
+[Term]
+id: DIGITRUBBER:000122
+name: condition [ssn]
+name: zustand [ssn]
+def: "Used to specify ranges for qualities that act as conditions on a system/sensor's operation. For example, wind speed of 10-60m/s may be used as the condition on a SystemProperty, for example, to state that a sensor has a particular accuracy in that" []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.w3.org/ns/ssn/systems/Condition" xsd:string
+property_value: IAO:0000412 "http://www.w3.org/ns/ssn/systems/" xsd:string
+
+[Term]
+id: DIGITRUBBER:000123
+name: raw material [hsh]
+name: rohmaterial [hsh]
+def: "The basic materials from which a finished product is made in the system under investigation. Constitutes an entity in the material cost and waste management cost group." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000124
+name: halbfabrikat [hsh]
+name: semi-finished product [hsh]
+def: "Processed raw materials that are not used for final consumption but as input for the production of finished goods in the system under investigation. Constitutes an entity in the material cost and waste management cost group." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000125
+name: endprodukt [hsh]
+name: finished product [hsh]
+def: "The product that emerges at the end of the production process of the system under study.  Constitutes an entity in the material cost, production cost, and waste management cost group." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000126
+name: ersatzteil [hsh]
+name: spare parts [hsh]
+def: "A duplicate part to replace a lost or damaged part of a machine entity unit in the system under investigation. Constitutes an entity sub-group of the wear parts entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000127
+name: verschleißteil [hsh]
+name: wear parts [hsh]
+def: "Parts pf a machine entity unit that are bound to wear out with repetitive use and will require periodic repair or replacement based on maintenance interval in the system under investigation. Constitutes an entity of the maintenance cost and material cost group." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000128
+name: packaging [hsh]
+name: verpackung [hsh]
+def: "Materials used to wrap or protect raw materials, semi-finished products, and finished products." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000129
+name: operator [hsh]
+def: "A person who operates a machine entity unit in the system under investigation. Constitutes an entity of the human resource and the production cost group." []
+is_a: BFO:0000023
+
+[Term]
+id: DIGITRUBBER:000130
+name: operator [ncti]
+def: "A person that operates some apparatus or machine." []
+is_a: BFO:0000023
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C48036" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000131
+name: supervisor [hsh]
+def: "A person who supervises and coordinates the work of employees who set up and operate machine entity units in the system under investigation. Constitutes an entity of the human ressource and the production cost group." []
+is_a: BFO:0000023
+
+[Term]
+id: DIGITRUBBER:000132
+name: supervisor [ncti]
+def: "An individual who is responsible for managing or operating a business, organization, team or department." []
+is_a: BFO:0000023
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C134832" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000133
+name: supervisor  [m4i]
+name: supervisor [m4i]
+def: "Designated administrator over one or more groups/teams working to produce a resource, or over one or more steps of a development process" []
+is_a: BFO:0000023
+property_value: IAO:0000119 "http://w3id.org/nfdi4ing/metadata4ing#Supervisor" xsd:string
+property_value: IAO:0000412 "http://w3id.org/nfdi4ing/metadata4ing#" xsd:string
+
+[Term]
+id: DIGITRUBBER:000134
+name: hilfskraft [hsh]
+name: operational assistant [hsh]
+def: "A person who supports an operator in the system under investigation. Constitutes an entity of the human ressource and the production cost group." []
+is_a: BFO:0000023
+
+[Term]
+id: DIGITRUBBER:000135
+name: lagerist [hsh]
+name: warehouse clerk [hsh]
+def: "A person who handles a company's incoming and outgoing raw materials, semi-finished prodcuts as well as finished products, and who manages stocks in the system under investigation. Constitutes an entity of the human ressource and the storage cost group." []
+is_a: BFO:0000023
+
+[Term]
+id: DIGITRUBBER:000136
+name: quality inspector [hsh]
+name: qualitätsprüfer [hsh]
+def: "A person who monitors the quality of incoming and outgoing products or materials in the system under investigation. Constitutes an entity of the human ressource and the production cost group." []
+is_a: BFO:0000023
+
+[Term]
+id: DIGITRUBBER:000137
+name: conveyor vehicle [hsh]
+name: fördermittel [hsh]
+def: "A mode of transport that is employed to transport raw materials, semi-finished goods and finished goods within the system under investigation. " []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000138
+name: mean time to failure [hsh]
+name: mittlere zeit bis zum ausfall [hsh]
+def: "A maintenance metric that measures the average amount of time a non-repairable asset operates before it fails in the system under investigation. Constitutes a factor of the maintenance cost group." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000139
+name: mean time to repair [hsh]
+name: mittlere reperaturdauer [hsh]
+def: "A maintenance metric that measures the average time required to troubleshoot and repair failed equipment. Constitutes a factor of the maintenance cost group." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000140
+name: maintenance interval [hsh]
+name: wartungsintevall [hsh]
+def: "The schedule for all anticipated maintenance activities regarding machine entites within the system under investigation. Constitutes a factor of the maintenance cost group." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000141
+name: maintenance interval [iirds]
+name: wartungsintevall
+def: "Type of planning time: Fixed time interval for the scheduled maintenance of a technical system or its parts." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://iirds.tekom.de/iirds#MaintenanceInterval" xsd:string
+property_value: IAO:0000412 "http://iirds.tekom.de/iirds#" xsd:string
+
+[Term]
+id: DIGITRUBBER:000142
+name: maintenance duration [hsh]
+name: wartungsdauer [hsh]
+def: "The averafe time that is required to conduct scheduled maintenance activities for a machine entity unit. Constitutes a factor of the maintenance cost group." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000143
+name: energy consumption [hsh]
+name: stromverbrauch [hsh]
+def: "The amount of electricity (kw/h) that is consumed by all entities in the system under investigation. Constitutes a factor of the energy cost, storage cost and production cost group." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000144
+name: stückkosten [hsh]
+name: unit cost [hsh]
+def: "The expenditure that incurs for acquiring a single unit of an entity sub-group in the system under investigation. Constitutes a factor of the maintenance cost, material cost, and storage cost group." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000145
+name: building [hsh]
+name: gebäude [hsh]
+def: "The facility where the operations of the system under investigation are conducted. Constitutes an entity of the energy cost group." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000146
+name: building [bwmd]
+name: gebäude
+def: "Any kind of building (e.g. an institute building)" []
+is_a: BFO:0000040
+property_value: IAO:0000119 "https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00027" xsd:string
+property_value: IAO:0000412 "http://purl.allotrope.org/ontologies" xsd:string
+
+[Term]
+id: DIGITRUBBER:000147
+name: building [allotrope]
+name: gebäude
+def: "A building (site) is a site located in a structure with a roof and walls. [Allotrope]" []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/spatial#AFSP_0000003" xsd:string
+property_value: IAO:0000412 "http://purl.allotrope.org/" xsd:string
+
+[Term]
+id: DIGITRUBBER:000148
+name: building [ncit]
+name: gebäude
+def: "A structure that has a roof and walls and stands more or less permanently in one place." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C80231" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000149
+name: building [envo]
+name: gebäude
+def: "A permanent walled and roofed construction." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ENVO_00000073" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/envo.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000150
+name: durchsatz [hsh]
+name: throughput [hsh]
+def: "The amount of raw materials, semi-finisehd products or finished products passing through a machine entity in the time X in the system under investigation." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000151
+name: indirect cost [hsh]
+name: indirekte kosten [hsh]
+def: "All costs that are derived from costs groups encompassing overhead charges or subsidiary work." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000152
+name: direct cost [hsh]
+name: direkte kosten [hsh]
+def: "All costs that are derived from costs groups that are directly related to the production of finished goods in the system under study." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000153
+name: direct cost
+name: direkte kosten
+def: "Costs that can be identified with a particular project or program." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C19579" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000160
+name: extruder [hsh]
+def: "A machine that pushes unvulcanized rubber compounds through an extrusion die under pressure. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000161
+name: banbury mixer [hsh]
+name: knetmaschine [hsh]
+def: "A machine that mixes polymers and additives in the manufacture of plastic and rubber products. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000162
+name: reifenproduktionsmaschine [hsh]
+name: tire building machine [hsh]
+def: "A machine that assembles assembles all components and semi-finished products to produce a tyre. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000163
+name: cutter [hsh]
+name: schneidemaschine [hsh]
+def: "A pneumtaic machine that cuts rubber materials. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000164
+name: calandar [hsh]
+name: kalandar [hsh]
+def: "A machine that combines a series of hard pressure rollers used to finish or smooth a sheet of rubber material. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000165
+name: lagerroboter [hsh]
+name: storage robot [hsh]
+def: "An automated system that transports good to, within and from storage areas. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000166
+name: gantry crane [hsh]
+name: portalkran [hsh]
+def: "An overhead crane with a girder configuration supported by freestanding legs that move on wheels to transport goods. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000167
+name: gleichförmigkeitsmessautomat [hsh]
+name: uniformity grading machine [hsh]
+def: "A machine that is measures the tire uniformity for complete vehicle wheels and determines the radial and lateral force fluctuations of the rolling wheel. Constitutes an entity sub-group of the machine entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000168
+name: forklift [hsh]
+name: gabelstapler [hsh]
+def: "A powered industrial truck used to lift and move materials over short distances. Constitutes an entity sub-group of the conveyor vehicle entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000169
+name: conveyor [hsh]
+name: fördertechnik [hsh]
+def: "A continuous moving strip or surface that is used for transporting objects between different destinations. Constitutes an entity sub-group of the conveyor vehicle entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000170
+name: hubwagen [hsh]
+name: lift truck [hsh]
+def: "A small truck for lifting and transporting loads. Constitutes an entity sub-group of the conveyor vehicle entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000171
+name: tools [hsh]
+name: wekzeuge [hsh]
+def: "An object shaped for repair and installation purposes, with the help of which something is processed or manufactured.Constitutes an entity sub-group of the wear parts entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000172
+name: kleinteile [hsh]
+name: small parts [hsh]
+def: "A set of small wear parts required to maintain and repair a machine entity. Constitutes an entity sub-group of the wear parts entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000173
+name: ganze komponenten [hsh]
+name: whole components [hsh]
+def: "Components required to maintain and repair a machine entity. Constitutes an entity sub-group of the wear parts entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000174
+name: beleuchtung [hsh]
+name: lighting [hsh]
+def: "Equipment that is employed for producing light in the system under investigation. Constitutes an entity sub-group of the building entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000175
+name: air conditioning [hsh]
+name: klimatisierung [hsh]
+def: "Equipment that is employed for cooling and heating in the system under investigation. Constitutes an entity sub-group of the building entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000176
+name: büroausstattung [hsh]
+name: office equipment [hsh]
+def: "Equipment that is employed for managerial purposes in the system under investigation." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000177
+name: narural rubber [hsh]
+name: naturkautschuk [hsh]
+def: "An elastic material obtained from the latex sap of trees. Constitutes an entity sub-group of the raw material entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000178
+name: narural rubber [ncti]
+name: naturkautschuk [ncti]
+def: "The natural extract of tropical rubber plants." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C106043" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000179
+name: synthetic rubber [hsh]
+name: synthetikkautschuk [hsh]
+def: "Any of several substances similar to natural rubber in properties and uses, produced synthetically. Constitutes an entity sub-group of the raw material entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000180
+name: filling material [hsh]
+name: füllstoffe [hsh]
+def: "Material that is required to manipulate the properties of rubber products. Constitutes an entity sub-group of the raw material entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000181
+name: reinforcing materials [hsh]
+name: verstärkungsmaterialien [hsh]
+def: "Material that is used to support the structure of rubber based products (e.g., steel cords). Constitutes an entity sub-group of the raw material entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000182
+name: plasticizer [hsh]
+name: weichmacher [hsh]
+def: "A substance added to a synthetic resin to produce or promote plasticity and flexibility and to reduce brittleness. Constitutes an entity sub-group of the raw material entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000183
+name: plasticizer [ncti]
+name: weichmacher [ncti]
+def: "A substance added to plastics or other materials to make or keep them soft or pliable." []
+comment: plasticiser
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C55826" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000184
+name: plasticizer [chebi]
+name: weichmacher [chebi]
+def: "Any compound that is used as an additive to increase the plasticity or fluidity of a substance, particularly but not exclusively to synthetic polymers." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHEBI_79056" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000185
+name: vulcanization chemicals [hsh]
+name: vulkanisationschemikalien [hsh]
+def: "Chemicals added to rubber to alter its physical properties. Constitutes an entity sub-group of the raw material entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000186
+name: other additives [hsh]
+name: sonstige additive [hsh]
+def: "Additional substances that are employed to product rubber-based products. Constitutes an entity sub-group of the raw material entity." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000187
+name: Raman spectroscopy [ifnano]
+def: "A non-destructive light scattering technique that provides detailed information about the chemical structure upon the interaction of light with the chemical bonds within a material based on periodic changes of polarizabilities." []
+is_a: IAO:0000104
+property_value: IAO:0000119 "https://www.horiba.com/ind/raman-imaging-and-spectroscopy/" xsd:string
+
+[Term]
+id: DIGITRUBBER:000188
+name: Raman spectroscopy [allotrope]
+def: "Any type of vibrational spectroscopy where the Raman scattering of monochromatic light, usually from a laser in the visible, near infrared, or near ultraviolet range by a sample is detected. [CHMO]" []
+comment: http://purl.allotrope.org/ontologies/
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/process#AFP_0000047" xsd:string
+property_value: IAO:0000412 "skos:definition" xsd:string
+
+[Term]
+id: DIGITRUBBER:000189
+name: Raman spectroscopy [ncit]
+def: "Emission of electromagnetic energy with a shorter frequency (longer wavelength) than that of the incident monochromatic light. Arises from the low probability absorption of quanta with a higher energy than that required for a transition: the difference in energy is emitted as a lower frequency (energy) photon. Allows analysis of vibrational and rotational energy levels using visible incident light. [ NCI ]" []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C17157" xsd:string
+
+[Term]
+id: DIGITRUBBER:000190
+name: Spectrum [ifnano]
+def: "A graph that shows the intensity of radiation at different wavelengths or the response of the atomic or molecular system to different wavelengths of the radiation" []
+is_a: IAO:0000030
+property_value: IAO:0000119 "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Book%3A_Quantum_States_of_Atoms_and_Molecules_(Zielinksi_et_al)/01%3A_Spectroscopy#:~:text=A%20spectrum%20is%20a%20graph,different%20wavelengths%20of%20the%20radiation." xsd:string
+
+[Term]
+id: DIGITRUBBER:000191
+name: Spectrum [allotrope]
+def: "A spectrum is a data distribution function of a measured quantity in a spectroscopy against some experimental parameter. [Allotrope]" []
+comment: http://purl.allotrope.org/ontologies/
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0000068" xsd:string
+property_value: IAO:0000412 "skos:definition" xsd:string
+
+[Term]
+id: DIGITRUBBER:000192
+name: Spectrum [ncit]
+def: "An array of entities, such as light waves or particles, ordered in accordance with the magnitudes of a common physical property, such as wavelength or mass." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C84383" xsd:string
+
+[Term]
+id: DIGITRUBBER:000193
+name: Raman spectrum [ifnano]
+def: "A graph presents a number of peaks, showing the intensity and wavelength position of the Raman scattered light, in which each peak corresponds to a specific molecular bond vibration." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000194
+name: Raman spectrum [allotrope]
+def: "A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample. [CHMO]" []
+comment: http://purl.allotrope.org/ontologies/
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0000519" xsd:string
+property_value: IAO:0000412 "skos:definition" xsd:string
+
+[Term]
+id: DIGITRUBBER:000195
+name: FTIR spectroscopy [ifnano]
+def: "Fourier transform infrared involves the probing of matter with infrared radiation. It is based on periodic changes in dipole moments caused by molecular vibrations during the absorption of IR radiation and gives spectroscopic fingerprints." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000196
+name: ATR-FTIR [ifnano]
+def: "An attenuated total reflection accessory operates by measuring the changes that occur in a totally internally reflected infrared beam when the beam comes into contact with a sample." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000197
+name: Statistical discrimination [ifnano]
+def: "It arises when groups differ statistically in their distributions on characteristics relevant to a given situation." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000198
+name: Chemometrics [ifnano]
+def: "The chemical discipline that uses mathematical and statistical methods, (a) to design or select optimal measurement procedures and experiments, and (b) to provide maximum chemical information by analyzing chemical data." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000199
+name: Raw rubber samples [ifnano]
+def: "Natural and synthetic rubber materials that are modified and shaped into rubber products through the rubber extrusion process." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000200
+name: Correlation [ifnano]
+def: "A statistical measure that expresses the extent to which two variables are linearly related (meaning they change together at a constant rate). It’s a common tool for describing simple relationships without making a statement about cause and effect." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "https://www.jmp.com/en_ca/statistics-knowledge-portal/what-is-correlation.html" xsd:string
+
+[Term]
+id: DIGITRUBBER:000201
+name: Correlation [ncit]
+def: "The degree to which two or more quantities or events are linearly associated, a statistical relation between two or more variables such that systematic changes in the value of one variable are accompanied by systematic changes in the others." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C48834" xsd:string
+
+[Term]
+id: DIGITRUBBER:000202
+name: concentration [ifnano]
+def: "A quality of a substance in terms of its amount per unit volume in a mixture." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Concentration" xsd:string
+
+[Term]
+id: DIGITRUBBER:000203
+name: concentration [bwmd]
+def: "The quantity kind concentration" []
+comment: https://www.materials.fraunhofer.de/ontologies/BWMD_ontology
+is_a: BFO:0000019
+property_value: IAO:0000119 "https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00298" xsd:string
+
+[Term]
+id: DIGITRUBBER:000204
+name: concentration [allotrope]
+def: "A concentration (datum) is a quantification facet that quantifies a quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance. [Allotrope]" []
+comment: http://purl.allotrope.org/ontologies/
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0002036" xsd:string
+
+[Term]
+id: DIGITRUBBER:000205
+name: concentration [ncit]
+def: "The quantity of a substance per unit volume or weight; a measure of the amount of substance present in a unit amount of mixture, particularly, the amount of solute dissolved in a solvent. The amounts can be expressed as moles, masses, volumes, or parts." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C41185" xsd:string
+
+[Term]
+id: DIGITRUBBER:000206
+name: concentration [edam]
+def: "The concentration of a chemical compound." []
+comment: http://edamontology.org
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://edamontology.org/data_2140" xsd:string
+
+[Term]
+id: DIGITRUBBER:000207
+name: concentration [chmo]
+def: "Experimental method output expressing the contribution of one constituent to the composition of a mixture." []
+comment: http://purl.obolibrary.org/obo/chmo.owl
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHMO_0002820" xsd:string
+
+[Term]
+id: DIGITRUBBER:000208
+name: concentration [ecso]
+def: "the strength of a solution; number of molecules of a substance in a given volume" []
+comment: http://purl.dataone.org/odo/ECSO8.owl
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.dataone.org/odo/ECSO_00001120" xsd:string
+
+[Term]
+id: DIGITRUBBER:000209
+name: extrudate [ifnano]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000210
+name: extrusion [ifnano]
+def: "Extrusion is a process used to create objects of a fixed cross-sectional profile by pushing material through a die of the desired cross-section." []
+is_a: BFO:0000015
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Extrusion" xsd:string
+
+[Term]
+id: DIGITRUBBER:000211
+name: extrusion [rex]
+def: "A transformation in which an atom or group Y connected to two other atoms or groups X and Z is lost from a molecule, leading to a product in which X is bonded to Z, e.g. X-Y-Z --> X-Z + Y." []
+comment: http://purl.obolibrary.org/obo/rex.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/REX_0000100" xsd:string
+
+[Term]
+id: DIGITRUBBER:000212
+name: extrusion [chmo]
+def: "A process used to create objects of a fixed cross-sectional profile by forcing or drawing a material through a die." []
+comment: http://purl.obolibrary.org/obo/chmo.owl
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHMO_0001613" xsd:string
+
+[Term]
+id: DIGITRUBBER:000213
+name: Laser induced breakdown spectroscopy [ifnano]
+def: "Laser induced breakdown spectroscopy is a type of atomic emission spectroscopy which uses a highly energetic laser pulse as the excitation source. The laser is focused to form a plasma, which atomizes and excites samples. The Emission of these excited species is analyzed to identify and quantify the elements contained in the sample." []
+is_a: IAO:0000104
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy" xsd:string
+
+[Term]
+id: DIGITRUBBER:000214
+name: Laser induced breakdown spectroscopy [chmo]
+def: "A type of atomic emission spectrometry where a high energy laser pulse is used to generate a plasma which acts as the excitation source." []
+comment: http://purl.obolibrary.org/obo/chmo.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHMO_0000258" xsd:string
+
+[Term]
+id: DIGITRUBBER:000215
+name: distribution quality [ifnano]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000216
+name: peak [ifnano]
+def: "In Spectroscopy, peaks are features of a spectrum. A peak comprise a restricted region of a spectrum, which is absorbed or emitted with high intensity." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000217
+name: peak [allotrope]
+def: "A peak describes a part of a data distribution function at a definite range of the experimental parameter (independent variable) of the distribution function. This definition includes a single data point of the distribution function. [Allotrope]" []
+comment: http://purl.allotrope.org/ontologies/
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0000413" xsd:string
+
+[Term]
+id: DIGITRUBBER:000218
+name: peak [ncit]
+def: "The most extreme possible amount or value; the highest point." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C48054" xsd:string
+
+[Term]
+id: DIGITRUBBER:000219
+name: peak [envo]
+def: "The summit of a mount." []
+comment: http://purl.obolibrary.org/obo/envo.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ENVO_00000480" xsd:string
+
+[Term]
+id: DIGITRUBBER:000220
+name: peak [ms]
+def: "A localized region of relatively large ion signal in a mass spectrum. Although peaks are often associated with particular ions, the terms peak and ion should not be used interchangeably." []
+comment: http://purl.obolibrary.org/obo/ms.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/MS_1000231" xsd:string
+
+[Term]
+id: DIGITRUBBER:000221
+name: raw spectrum [ifnano]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000222
+name: processed spectrum [ifnano]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000223
+name: principal component analysis [ifnano]
+def: "Principal component analysis (PCA) is the process of computing the principal components and using them to perform a change of basis on the data." []
+is_a: IAO:0000104
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Principal_component_analysis" xsd:string
+
+[Term]
+id: DIGITRUBBER:000224
+name: principal component analysis [ncit]
+def: "A vector space transform used to reduce the dimensionality in a dataset while retaining those characteristics of the dataset that contribute most to its variance." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C49291" xsd:string
+
+[Term]
+id: DIGITRUBBER:000225
+name: principal component analysis [edam]
+def: "A statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components." []
+comment: http://edamontology.org
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://edamontology.org/operation_3960" xsd:string
+
+[Term]
+id: DIGITRUBBER:000226
+name: Photometric Measurement Process [ifnano]
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000227
+name: Metadata [ifnano]
+def: "Metadata are data, which belong to a measurement. They complete the measurment data providing information about the condition under which the measurements have been taken place." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000228
+name: Metadata [ncit]
+def: "Data about data; information that describes another set of data." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C52095" xsd:string
+
+[Term]
+id: DIGITRUBBER:000229
+name: Photometry [ifnano]
+def: "Measurement method using visible light" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000230
+name: Photometry [ncit]
+def: "Measurement of the properties of light, especially luminous intensity." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C65109" xsd:string
+
+[Term]
+id: DIGITRUBBER:000231
+name: Colorimetry [ifnano]
+def: "Determination concentrations using a color chart" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000232
+name: Colorimetry [allotrope]
+def: "The determination of the spectral absorbance of a solution. This method is often used to determine the concentration of a chemical in a solution. [CHMO]" []
+comment: http://purl.allotrope.org/ontologies/
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/process#AFP_0002309" xsd:string
+property_value: IAO:0000412 "skos:definition" xsd:string
+
+[Term]
+id: DIGITRUBBER:000233
+name: Colorimetry [ncit]
+def: "An assessment used to quantify and describe the colors within the visible spectrum of light." []
+comment: http://purl.allotrope.org/ontologies/
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C111096" xsd:string
+
+[Term]
+id: DIGITRUBBER:000234
+name: Image data [ifnano]
+def: "Digital representation of an image. Images are represented in natural numbers." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000235
+name: RGB image data [ifnano]
+def: "Digital representation of an image using a natural number defining the red, green and blue proportion for each pixel " []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000236
+name: Picture grid [ifnano]
+def: "Commen form of representing a digital picture: The picture is represented as a XY-Grid of Data-Points containing the color and brightness information." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000237
+name: Pixel [ifnano]
+def: "Element of the picture grid" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000238
+name: Pixel [ncit]
+def: "The smallest resolvable rectangular area of an image, either on a screen or stored in memory." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C48367" xsd:string
+
+[Term]
+id: DIGITRUBBER:000239
+name: Digital image processing [ifnano]
+def: "The use of a digital computer to process digital images through an algorithm." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000240
+name: Image analysis [ifnano]
+def: "Using image data and eventually digital image processing in order to generate a corellation between this data and an analytical target." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000241
+name: Image analysis [allotrope]
+def: "Image analysis is the discovering of patterns in an image that are correlated to qualities of the material entity the image represents or of abstract patterns. [Allotrope]" []
+comment: allotrope
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/process#AFP_0003540" xsd:string
+
+[Term]
+id: DIGITRUBBER:000242
+name: Image analysis [edam]
+def: "The analysis of a image (typically a digital image) of some type in order to extract information from it." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://edamontology.org/operation_3443" xsd:string
+
+[Term]
+id: DIGITRUBBER:000243
+name: Analytical target [ifnano]
+def: "The information represented by one or more variables, which has to be predicted by data analysis in instrumental analytics" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000244
+name: Geometry correction [ifnano]
+def: "In terms of digtal image procession: correction methods to compensate image errors caused by lense distorsion or perspective." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000245
+name: Linear discriminant analysis [ifnano]
+def: "Linear discriminant analysis (LDA), normal discriminant analysis (NDA), or discriminant function analysis is a generalization of Fisher's linear discriminant, a method used in statistics and other fields, to find a linear combination of features that characterizes or separates two or more classes of objects or events." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000246
+name: Supervised learning [ifnano]
+def: "Machine learning task of learning a function that maps an input to an output based on example input-output pairs." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000247
+name: Supervised learning [obi]
+def: "A machine learning process using a function that maps an input to an output based on example input-output pairs. It infers a function from labeled training data consisting of a set of training examples." []
+comment: http://purl.obolibrary.org/obo/obi.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/OBI_0002588" xsd:string
+property_value: IAO:0000412 "(supervised machine learning)" xsd:string
+
+[Term]
+id: DIGITRUBBER:000248
+name: Unsupervised learning [ifnano]
+def: "A type of algorithm that learns patterns from untagged data" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000249
+name: Unsupervised learning [obi]
+def: "A machine learning process that infers a function describing the structure of \"unlabeled\" data (i.e. data that has not been classified or categorized)." []
+comment: http://purl.obolibrary.org/obo/obi.owl
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/OBI_0002589" xsd:string
+property_value: IAO:0000412 "(unsupervised machine learning)" xsd:string
+
+[Term]
+id: DIGITRUBBER:000250
+name: Image histogramm / histogramm [ifnano]
+def: "A type of histogram that acts as a graphical representation of the tonal distribution in a digital image. It plots the number of pixels for each tonal value." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000251
+name: Color histogramm [ifnano]
+def: "A multidimensional histogram of the distribution of color in an image" []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000252
+name: 8-bit number [ifnano]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000253
+name: 16-bit number [ifnano]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000254
+name: count [ifnano]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000255
+name: count [allotrope]
+def: "The number of objects counted. [Allotrope]" []
+comment: allotrope
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/property#AFX_0000604" xsd:string
+property_value: IAO:0000412 "skos:concept" xsd:string
+
+[Term]
+id: DIGITRUBBER:000256
+name: count [allotrope]
+def: "A datum that has non-negative integer values that is about the number of discrete things. [Allotrope]" []
+comment: allotrope
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0000984" xsd:string
+property_value: IAO:0000412 "skos:concept" xsd:string
+
+[Term]
+id: DIGITRUBBER:000257
+name: count [ncit]
+def: "Determining the number or amount of something." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C25463" xsd:string
+
+[Term]
+id: DIGITRUBBER:000258
+name: count [ms]
+def: "a count is a data item denoted by an integer and represented the number of instances or occurences of an entity" []
+comment: http://purl.obolibrary.org/obo/ms.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/STATO_0000047" xsd:string
+
+[Term]
+id: DIGITRUBBER:000259
+name: arbitrary units [ifnano]
+def: "A general, relative unit of measurement " []
+is_a: IAO:0000030
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Arbitrary_unit" xsd:string
+
+[Term]
+id: DIGITRUBBER:000260
+name: arbitrary units [ncit]
+def: "A single undivided thing (unit) based on or subject to individual judgment or preference, and not by necessity, reason, or principle." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C75765" xsd:string
+
+[Term]
+id: DIGITRUBBER:000261
+name: zinc [ifnano]
+def: "The chemical element zinc" []
+is_a: IAO:0000030
+property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Zinc" xsd:string
+
+[Term]
+id: DIGITRUBBER:000262
+name: zinc [bwmd]
+def: "The chemical element zinc" []
+comment: https://www.materials.fraunhofer.de/ontologies/BWMD_ontology
+is_a: IAO:0000030
+property_value: IAO:0000119 "https://www.materials.fraunhofer.de/ontologies/BWMD_ontology/mid#BWMD_00096" xsd:string
+
+[Term]
+id: DIGITRUBBER:000263
+name: zinc [ncit]
+def: "An element with atomic symbol Zn, atomic number 30, and atomic weight 65.39." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C948" xsd:string
+
+[Term]
+id: DIGITRUBBER:000264
+name: zinc [efo]
+def: "A zinc group element atom that has formula Zn." []
+comment: http://www.ebi.ac.uk/efo/efo.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHEBI_27363" xsd:string
+
+[Term]
+id: DIGITRUBBER:000265
+name: Standard deviation [ifnano]
+def: "A measure of the amount of variation of a set of values." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000266
+name: Standard deviation [allotrope]
+def: "The standard deviation is a measure of the amount of variation or dispersion of a set of values. [Wikipedia]" []
+comment: allotrope
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.allotrope.org/ontologies/result#AFR_0002192" xsd:string
+
+[Term]
+id: DIGITRUBBER:000267
+name: Standard deviation [ncit]
+def: "A measure of the range of values in a set of numbers. Standard deviation is a statistic used as a measure of the dispersion or variation in a distribution, equal to the square root of the arithmetic mean of the squares of the deviations from the arithmetic mean." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C53322" xsd:string
+
+[Term]
+id: DIGITRUBBER:000268
+name: Standard deviation [ms]
+def: "The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance." []
+comment: http://purl.obolibrary.org/obo/ms.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/STATO_0000237" xsd:string
+
+[Term]
+id: DIGITRUBBER:000269
+name: Mooney viscosity [ifnano]
+def: "The viscosity of rubber using a standard test method and Mooney Viscometer." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000270
+name: Monomer [ifnano]
+def: "Asubstance which is capable of forming covalent bonds with a sequence of additional like or unlike molecules under the conditions of the relevant polymerforming reaction used for the particular process" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000271
+name: Monomer [ncit]
+def: "A chemical subunit that can undergo polymerization by bonding to other subunits." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C63845" xsd:string
+
+[Term]
+id: DIGITRUBBER:000272
+name: Polymer [ifnano]
+def: "a substance consisting of molecules characterised by the sequence of one or more types of monomer unit. Such molecules must be distributed over a range of molecular weights. " []
+is_a: CHEBI:60004
+
+[Term]
+id: DIGITRUBBER:000273
+name: Polymer [chebi]
+def: "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.." []
+comment: http://purl.obolibrary.org/obo/chebi.owl
+is_a: CHEBI:60004
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHEBI_60027" xsd:string
+
+[Term]
+id: DIGITRUBBER:000274
+name: Polymer [ncit]
+def: "A substance made up of variable numbers of repeating structural units linked through covalent bonds." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: CHEBI:60004
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C48803" xsd:string
+
+[Term]
+id: DIGITRUBBER:000275
+name: Polymer [proco]
+def: "A substance or material consisting of very large molecules, or macromolecules, composed of many repeating subunits." []
+comment: http://purl.obolibrary.org/obo/proco.owl
+is_a: CHEBI:60004
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/PROCO_0000054" xsd:string
+
+[Term]
+id: DIGITRUBBER:000276
+name: Composition [ifnano]
+def: "The relative proportions of monomers that make up a particular chemical polymer (raw rubber)." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000277
+name: Composition [fso]
+def: "Composition of the material or substance." []
+comment: http://www.aidimme.es/FurnitureSectorOntology.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://www.aidimme.es/FurnitureSectorOntology.owl#hasComposition" xsd:string
+
+[Term]
+id: DIGITRUBBER:000278
+name: Composition [pato]
+def: "A single physical entity inhering in an bearer by virtue of the bearer's quantities or relative ratios of subparts. [PATO]" []
+comment: PATO
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/PATO_0000025" xsd:string
+
+[Term]
+id: DIGITRUBBER:000279
+name: Composition [ncit]
+def: "The way in which something is made, especially in terms of its different parts; its constituents." []
+comment: http://purl.obolibrary.org/obo/ncit.owl
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C53414" xsd:string
+
+[Term]
+id: DIGITRUBBER:000280
+name: sample [ifnano]
+def: "A material entity, which is part of a larger set of the same material entity" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000281
+name: Agglomerat [dik]
+name: Agglomerate [dik]
+def: "Group of interlocked aggregates that are easily separated by normal rubber processing" []
+is_a: CHEBI:60027
+
+[Term]
+id: DIGITRUBBER:000282
+name: Aggregat [dik]
+name: Aggregate [dik]
+def: "Rigid group of coalesced particles which is the smallest entity that can be dispersed by normal rubber processing" []
+is_a: CHEBI:60004
+
+[Term]
+id: DIGITRUBBER:000283
+name: Particle [dik]
+name: Partikel [dik]
+def: "Smallest discernible spherical or nearly spherical unit which can exist separately" []
+is_a: CHEBI:59999
+
+[Term]
+id: DIGITRUBBER:000284
+name: Particle [ncit]
+name: Partikel [ncit]
+def: "An object with finite mass and size parameters." []
+is_a: CHEBI:24431
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C63850" xsd:string
+
+[Term]
+id: DIGITRUBBER:000285
+name: Polymer [dik]
+def: "substance composed of molecules characterized by the multiple repetition of one or more species of atoms or groups of atoms (constitutional units) linked to each other in amounts sufficient to provide a set of properties that do not vary markedly with the addition or removal of one or a few of the constitutional units" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000286
+name: Polymer [chebi]
+def: "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc." []
+is_a: CHEBI:28798
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_60027" xsd:string
+
+[Term]
+id: DIGITRUBBER:000287
+name: Polymer [ncit]
+def: "A substance made up of variable numbers of repeating structural units linked through covalent bonds." []
+is_a: CHEBI:28798
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C48803" xsd:string
+
+[Term]
+id: DIGITRUBBER:000288
+name: Polymer [proco]
+def: "A substance or material consisting of very large molecules, or macromolecules, composed of many repeating subunits." []
+is_a: CHEBI:28798
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/proco.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PROCO_0000054" xsd:string
+
+[Term]
+id: DIGITRUBBER:000289
+name: Raw Rubber [dik]
+name: Rohkautschuk [dik]
+def: "natural or synthetic rubber, usually in bales or packages, forming the starting material for the manufacture of rubber products" []
+is_a: CHEBI:28798
+
+[Term]
+id: DIGITRUBBER:000290
+name: Synthesekautschuk [dik]
+name: Synthetic Rubber [dik]
+def: "rubber produced by non-biologically polymerizing one or more monomers" []
+is_a: CHEBI:28798
+
+[Term]
+id: DIGITRUBBER:000291
+name: M-group Rubber [dik]
+name: M-Gruppe Kautschuk [dik]
+def: "Rubber with a saturated carbon chain of the polymethylene type" []
+is_a: CHEBI:28798
+
+[Term]
+id: DIGITRUBBER:000292
+name: Ethylen-Propylen-Dien-‎Kautschuk ‎[dik]
+name: Ethylene Propylene Diene Rubber [dik]
+def: "Terpolymer of ethylene, propylene and a diene with the remaining unsaturated portion of the polymerized diene in the side chain" []
+is_a: CHEBI:28798
+
+[Term]
+id: DIGITRUBBER:000293
+name: Diene Rubber [dik]
+name: Dienkautschuk [dik]
+def: "type of rubber having an unsaturated carbon main chain derived mostly from butadiene or a substituted butadiene" []
+is_a: CHEBI:28798
+
+[Term]
+id: DIGITRUBBER:000294
+name: Keltan 5470C [dik]
+def: "Trade name for a specific EPDM rubber" []
+is_a: CHEBI:60027
+
+[Term]
+id: DIGITRUBBER:000295
+name: Filler [dik]
+name: Füllstoff [dik]
+def: "solid compounding ingredient, in particulate form, which may be added in relatively large proportions to a rubber or rubber latex for technical or economic purposes" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000296
+name: Carbon Black [dik]
+name: Ruß [dik]
+def: "compounding ingredient consisting essentially of more than 95 % elemental carbon in the form of nearspherical particles with major diameters less than 1 μm, generally coalesced into aggregates" []
+is_a: CHEBI:82297
+
+[Term]
+id: DIGITRUBBER:000297
+name: Carbon Black [chebi]
+name: Ruß [chebi]
+def: "An elemental carbon in the form of virtually pure colloidal particles that are produced by incomplete combustion or thermal decomposition of gaseous or liquid hydrocarbons under controlled conditions. A black, finely divided pellet or powder, its properties of specific surface area, particle size and structure, conductivity and colour can be varied by varying the exact conditions for its production. It is used in tyres, rubber and plastic products, printing inks and coatings." []
+is_a: CHEBI:82298
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_82297" xsd:string
+
+[Term]
+id: DIGITRUBBER:000298
+name: N-Carbon Black [dik]
+name: N-Ruß [dik]
+def: "The letter “N” is used to indicate a normal curing rate typical of furnace blacks that have received no special modification to alter their influence on the rate of cure of rubber." []
+is_a: DIGITRUBBER:000297 ! Ruß [chebi]
+
+[Term]
+id: DIGITRUBBER:000299
+name: S-Carbon Black [dik]
+name: S-Ruß [dik]
+def: "The letter “S” is used for channel blacks or for furnace blacks that have been modified to effectively reduce the curing rate of rubber." []
+is_a: DIGITRUBBER:000297 ! Ruß [chebi]
+
+[Term]
+id: DIGITRUBBER:000300
+name: N600-Carbon Black [dik]
+name: N600-Ruß [dik]
+def: "An N carbon black with an average nitrogen surface area of 33 to 39 m²/g." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000301
+name: Corax N660 [dik]
+def: "Trade name for a specific N600-carbon black" []
+is_a: DIGITRUBBER:000297 ! Ruß [chebi]
+
+[Term]
+id: DIGITRUBBER:000302
+name: Softener [dik]
+name: Weichmacher ‎[dik]
+def: "compounding ingredient used in small proportions to reduce the viscosity of an unvulcanized rubber mix or the hardness of a vulcanizate" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000303
+name: Paraffinic Oil [dik]
+name: Paraffinöl [dik]
+def: "hydrocarbon process oil, most or all of which is composed of alkanes" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000304
+name: ‎P460 [dik]
+def: "Trade name for a specific paraffinic oil" []
+is_a: DIGITRUBBER:000303 ! Paraffinöl [dik]
+
+[Term]
+id: DIGITRUBBER:000305
+name: Process Oil [dik]
+name: ‎Prozessöl‎ [dik]
+def: "hydrocarbon oil derived from petroleum or other sources and used as an extender or processing aid" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000306
+name: Processing Aid [dik]
+name: Verarbeitungshilfsmittel [dik]
+def: "compounding ingredient which improves the processability of a rubber compound or mix" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000307
+name: Alterungsschutzmittel [dik]
+name: Antidegradant [dik]
+def: "compounding ingredient used to retard deterioration by ageing" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000308
+name: Antilux 500‎ [dik]
+def: "Trade name for a specific antidegradant" []
+is_a: DIGITRUBBER:000307 ! Antidegradant [dik]
+
+[Term]
+id: DIGITRUBBER:000309
+name: Activator [dik]
+name: Aktivator [dik]
+def: "compounding ingredient used in small proportions to increase the effectiveness of an accelerator" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000310
+name: Activator [ncit]
+name: Aktivator [ncit]
+def: "A class of substances that binds to, activates and increases the activity of a target." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C154897" xsd:string
+
+[Term]
+id: DIGITRUBBER:000311
+name: Zinc Oxide [dik]
+name: Zinkoxid [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000312
+name: Zinkoxid Rotsiegel [dik]
+def: "Trade name for a specific zinc oxide" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000313
+name: Stearic Acid [dik]
+name: Stearinsäure [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000314
+name: Stearic Acid [ncit]
+name: Stearinsäure [dik]
+def: "A saturated long-chain fatty acid with an 18-carbon backbone. Stearic acid is found in various animal and plant fats, and is a major component of cocoa butter and shea butter." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C68426" xsd:string
+
+[Term]
+id: DIGITRUBBER:000315
+name: PALMERA B 1802-CG [dik]
+def: "Trade name for a specific stearic acid" []
+is_a: DIGITRUBBER:000313 ! Stearic Acid [dik]
+
+[Term]
+id: DIGITRUBBER:000316
+name: Accelerator [dik]
+name: Beschleuniger [dik]
+def: "compounding ingredient used in small amounts with a vulcanizing agent to increase the speed of vulcanization and/or enhance the physical properties of the vulcanizate" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000317
+name: Primary Accelerator [dik]
+name: Primärbeschleuniger [dik]
+def: "principal accelerator used in a vulcanizing system" []
+is_a: DIGITRUBBER:000316 ! Accelerator [dik]
+
+[Term]
+id: DIGITRUBBER:000318
+name: Secondary Accelerator [dik]
+name: Zweitbeschleuniger [dik]
+def: "accelerator used in low concentrations with the primary accelerator to optimize cure rate and vulcanizate properties" []
+is_a: DIGITRUBBER:000316 ! Accelerator [dik]
+
+[Term]
+id: DIGITRUBBER:000319
+name: Thiazol [dik]
+name: Thiazole [dik]
+def: "An azole in which the five-membered heterocyclic aromatic skeleton contains a N atom and one S atom." []
+is_a: CHEBI:38418
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_43732" xsd:string
+
+[Term]
+id: DIGITRUBBER:000320
+name: Di(benzothiazol-2-yl)disulfid [dik]
+name: di(benzothiazol-2-yl)disulfide [dik]
+is_a: CHEBI:35489
+
+[Term]
+id: DIGITRUBBER:000321
+name: Di(benzothiazol-2-yl)disulfid [chebi]
+name: di(benzothiazol-2-yl)disulfide [chebi]
+def: "An organic disulfide resulting from the formal oxidative coupling of the thiol groups of two molecules of 1,3-benzothiazole-2-thiol. It is used as an accelerator in the rubber industry." []
+is_a: CHEBI:35489
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_53239" xsd:string
+
+[Term]
+id: DIGITRUBBER:000322
+name: Vulkacit MBTS [dik]
+def: "Trade name for a specific di(benzothiazol-2-yl)disulfide" []
+is_a: DIGITRUBBER:000321 ! di(benzothiazol-2-yl)disulfide [chebi]
+
+[Term]
+id: DIGITRUBBER:000323
+name: Thiuram [dik]
+is_a: DIGITRUBBER:000316 ! Accelerator [dik]
+
+[Term]
+id: DIGITRUBBER:000324
+name: Tetrabenzylthiuramdisulfid [dik]
+name: Tetrabenzylthiuramdisulfide [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000325
+name: Luvomaxx TbzTD [dik]
+def: "Trade name for a specific tetrabenzylthiuramdisulfide" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000326
+name: Dithiocarbamat [dik]
+name: dithiocarbamate [dik]
+is_a: CHEBI:84292
+
+[Term]
+id: DIGITRUBBER:000327
+name: Dithiocarbamat [chebi]
+name: dithiocarbamate [chebi]
+def: "A member of the class of dithiocarbamate anions resulting from the deprotonation of both of the dithiocarbamic acid moieties of ethylenebis(dithiocarbamic acid). The major species at pH 7.3." []
+is_a: CHEBI:84292
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_77308" xsd:string
+
+[Term]
+id: DIGITRUBBER:000328
+name: Zinc Dibenzyldithiocarbamate [dik]
+name: Zink-Dibenzyldithiocarbamat [dik]
+is_a: DIGITRUBBER:000316 ! Accelerator [dik]
+
+[Term]
+id: DIGITRUBBER:000329
+name: Rhenogran ‎ZBDC 80‎ [dik]
+def: "Trade name for a specific zinc dibenzyldithiocarbamate" []
+is_a: DIGITRUBBER:000316 ! Accelerator [dik]
+
+[Term]
+id: DIGITRUBBER:000330
+name: Vulcanizing Agent [dik]
+name: Vulkanisationsmittel [dik]
+def: "compounding ingredient that produces crosslinking in rubber" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000331
+name: Vulcanizing System [dik]
+name: Vulkanisationssystem [dik]
+def: "combination of vulcanizing agent and, as required, accelerators, activators, retarders, etc., used to produce the desired vulcanization characteristics and vulcanizate properties" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000332
+name: Cure Rate [dik]
+name: Vernetzungsgeschwindigkeit [dik]
+def: "rate at which a rubber compound vulcanizes after having reached the point of incipient vulcanization" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000333
+name: Retarder [dik]
+name: Verzögerer [dik]
+def: "compounding ingredient used to reduce the tendency of a rubber compound to vulcanize prematurely" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000334
+name: Schwefel [dik]
+name: Sulfur [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000335
+name: PHR [dik]
+def: "mass of compounding ingredient added to one hundred mass units of elastomer" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000336
+name: Formulation [dik]
+name: Rezeptur [dik]
+def: "list of compounding ingredients and their proportions, used in the preparation of a compound" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000337
+name: Compounding Ingredient [dik]
+name: Mischungsbestandteil‎ [dik]
+def: "substance added to a rubber or rubber latex to form a mix" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000338
+name: Compound [dik]
+name: Mischung [dik]
+def: "intimate mixture of a rubber or rubbers or other polymer-forming materials with all the ingredients necessary for the finished product" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000339
+name: Safety Data Sheet [dik]
+name: Sicherheitsdatenblatt [dik]
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000340
+name: Product Data Sheet [dik]
+name: Produktdatenblatt [dik]
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000341
+name: Mill [dik]
+name: Walzwerk [dik]
+def: "machine with two counter-rotating rolls, frequently heated or cooled, usually driven at different speeds, and having an adjustable nip for mastication, mixing, blending, warm-up or sheeting" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000342
+name: Roll [dik]
+name: Walze [dik]
+def: "cylinder forming a major, rotating member of a calender or mill" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000343
+name: Festwalze [dik]
+name: Fixed Roll [dik]
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000344
+name: Setting Roll [dik]
+name: Stellwalze [dik]
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000345
+name: Drehzahl [dik]
+name: Rotational Frequency [dik]
+def: "A physical quality which inheres in a bearer by virtue of its speed rotating around itself." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000346
+name: Drehzahleinheit [dik]
+name: Rotational Frequency Unit [dik]
+is_a: UO:0000105
+
+[Term]
+id: DIGITRUBBER:000347
+name: Drehzahleinheit [ou]
+name: Rotational Frequency Unit [uo]
+def: "A unit which is a standard measure of the number of rotations in a given time.\" [NIST:NIST]" []
+is_a: UO:0000105
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000058" xsd:string
+
+[Term]
+id: DIGITRUBBER:000348
+name: Frequency Unit [dik]
+name: Frequenzeinheit [dik]
+is_a: UO:0000000 ! unit [sd]
+
+[Term]
+id: DIGITRUBBER:000349
+name: Frequency Unit [uo]
+name: Frequenzeinheit [uo]
+def: "A unit which is a standard measure of the number of repetitive actions in a particular time.\" [NIST:NIST]" []
+is_a: UO:0000000 ! unit [sd]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000105" xsd:string
+
+[Term]
+id: DIGITRUBBER:000350
+name: Frequency Unit [ncit]
+name: Frequenzeinheit [ncit]
+def: "An indication of the type of unit of measure being used to express a number of regular events in a given time per unit of time." []
+is_a: UO:0000000 ! unit [sd]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C67313" xsd:string
+
+[Term]
+id: DIGITRUBBER:000351
+name: Turns per Second [dik]
+name: Umdrehungen pro Sekunde [dik]
+def: "A rotational frequency unit which is equal to the number of completed turns in a period of time that equals to 1 second." []
+is_a: UO:0000058
+
+[Term]
+id: DIGITRUBBER:000352
+name: Turns per Second [uo]
+name: Umdrehungen pro Sekunde [uo]
+def: "A rotational frequency unit which is equal to the number complete turn in a period of time that equals to 1 second.\" [NIST:NIST]" []
+is_a: UO:0000058
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+
+[Term]
+id: DIGITRUBBER:000353
+name: Turns per Minute [dik]
+name: Umdrehungen pro Minute [dik]
+def: "A rotational frequency unit which is equal to the number of completed turns in a period of time that equals to 1 minute." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000355
+name: Festwalzen-Drehzahl [dik]
+name: Fixed Roll Speed [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000356
+name: Setting Roll Speed [dik]
+name: Stellwalzen-Drehzahl [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000357
+name: Temperatur [dik]
+name: Temperature [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000358
+name: Temperatur [ncit]
+name: Temperature [ncit]
+def: "A measure of the average kinetic energy of a system of particles. Temperature may be quantified, in the context of thermodynamics, as the potential of one system to transfer thermal energy to another system until both systems reach a state of thermal equilibrium." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C25206" xsd:string
+
+[Term]
+id: DIGITRUBBER:000359
+name: Temperatur [pato]
+name: Temperature [pato]
+def: "A physical quality of the thermal energy of a system." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0000146" xsd:string
+
+[Term]
+id: DIGITRUBBER:000360
+name: Temperatur [om]
+name: Temperature [om]
+def: "Temperature is the extent to which an object is hot." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature" xsd:string
+
+[Term]
+id: DIGITRUBBER:000361
+name: Temperatur [efo]
+name: Temperature [efo]
+def: "Temperature is a physical quality of the thermal energy of a system." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ebi.ac.uk/efo/efo.owl" xsd:string
+property_value: IAO:0000412 "http://www.ebi.ac.uk/efo/EFO_0001702" xsd:string
+
+[Term]
+id: DIGITRUBBER:000362
+name: Temperature Unit [dik]
+name: Temperatureinheit [dik]
+is_a: UO:0000000 ! unit [sd]
+
+[Term]
+id: DIGITRUBBER:000363
+name: Temperature Unit [uo]
+name: Temperatureinheit [uo]
+def: "A unit which is a standard measure of the average kinetic energy of the particles in a sample of matter.\" [Wikipedia:Wikipedia]" []
+is_a: UO:0000000 ! unit [sd]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000005" xsd:string
+
+[Term]
+id: DIGITRUBBER:000364
+name: Temperature Unit [ncit]
+name: Temperatureinheit [ncit]
+def: "An indication of the type of unit of measure being used to express a temperature." []
+is_a: UO:0000000 ! unit [sd]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C44276" xsd:string
+
+[Term]
+id: DIGITRUBBER:000365
+name: Temperature Control Unit [dik]
+name: Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000366
+name: Festwalzen-Temperatursteuergerät [dik]
+name: Fixed Roll Temperature Control Unit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000367
+name: Setting Roll Temperature Control Unit [dik]
+name: Stellwalzen-Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000368
+name: Festwalzen-Temperatur [dik]
+name: Fixed Roll Temperature [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000369
+name: Setting Roll Temperature [dik]
+name: Stellwalzen-Temperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000370
+name: NIP [dik]
+name: Walzenspalt [dik]
+def: "radial clearance between the roll surfaces of a mill or calender on a line of centres" []
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000371
+name: Auswalzen [dik]
+name: Sheeting [dik]
+def: "Process of converting a rubber or rubber mix, rubber dough or coagulated latex into a form in which the thickness is small in proportion to the length" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000372
+name: Dispergierung [dik]
+name: Dispersion [dik]
+def: "Distribution of one or more ingredients into a rubber, a rubber blend or a continuum material, by the application of shearing forces, in order to confer optimum and uniform properties" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000373
+name: Mastication [dik]
+name: Mastikation [dik]
+def: "the molecular mass of a rubber, in either the raw or the mixed state, by the action of mechanical work (shear) and atmospheric oxygen, sometimes assisted by peptizers and heat" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000374
+name: Mastication [ncit]
+name: Mastikation [ncit]
+def: "The process by which food is torn or crushed by the teeth." []
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C62062" xsd:string
+
+[Term]
+id: DIGITRUBBER:000375
+name: Mastication [hp]
+name: Mastikation [hp]
+def: "The process of biting and mashing food with the teeth prior to swallowing." []
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/hp.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/GO_0071626" xsd:string
+
+[Term]
+id: DIGITRUBBER:000376
+name: Processability [dik]
+name: Verarbeitbarkeit [dik]
+def: "relative ease with which raw or compounded rubbers can be handled in rubber-processing machinery" []
+is_a: IAO:0000003
+
+[Term]
+id: DIGITRUBBER:000377
+name: Mischer [dik]
+name: Mixer Device [dik]
+def: "A device for mixing/blending materials or signals." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000378
+name: Mischer [ncit]
+name: Mixer Device [ncit]
+def: "A mechanical device designed to blend materials or an electronic device designed to blend signals." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C50071" xsd:string
+
+[Term]
+id: DIGITRUBBER:000379
+name: Mechanical Mixer [dik]
+name: Mechanischer Mischer [dik]
+def: "A mixer device designed for mechanically mixing/blending materials." []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000380
+name: Mechanical Mixer [ncit]
+name: Mechanischer Mischer [ncit]
+def: "A mechanical component designed to blend materials." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C172142" xsd:string
+
+[Term]
+id: DIGITRUBBER:000381
+name: Innenmischer [dik]
+name: Internal Mixer [dik]
+def: "machine with temperature controls containing one or more rotors operating in a closed cavity used to masticate and/or to incorporate and disperse compounding ingredients into the rubber" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000382
+name: Rotor [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000383
+name: Mischkammer [dik]
+name: Mixing Chamber [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000384
+name: Drop Door [dik]
+name: Klappsattel [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000385
+name: Stamp [dik]
+name: Stempel [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000386
+name: Rotor Speed [dik]
+name: Rotor-Drehzahl [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000387
+name: Rotor Temperature Control Unit [dik]
+name: Rotor-Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000388
+name: Rotor Temperature [dik]
+name: Rotor-Temperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000389
+name: Mischkammer-Temperatursteuergerät [dik]
+name: Mixing Chamber Temperature Control Unit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000390
+name: Mischkammer-Temperatur [dik]
+name: Mixing Chamber Temperature [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000391
+name: Drop Door Temperature Control Unit [dik]
+name: Klappsattel-Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000392
+name: Drop Door Temperature [dik]
+name: Klappsattel-Temperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000393
+name: Stamp Temperature Control Unit [dik]
+name: Stempel-Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000394
+name: Stamp Temperature [dik]
+name: Stempel-Temperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000395
+name: Drehmoment [dik]
+name: Torque [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000396
+name: Drehmoment [om]
+name: Torque [om]
+def: "Torque is the effectiveness of a force to produce rotation about an axis, measured by the product of the force and the perpendicular distance from the line of action of the force to the axis." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ontology-of-units-of-measure.org/resource/om-2" xsd:string
+property_value: IAO:0000412 "http://www.ontology-of-units-of-measure.org/resource/om-2/Torque" xsd:string
+
+[Term]
+id: DIGITRUBBER:000397
+name: Drehmoment Einheit [dik]
+name: Torque Unit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000398
+name: Newtonmeter [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000399
+name: Rotor Torque [dik]
+name: Rotor-Drehmoment [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000400
+name: Mass Temperature [dik]
+name: Massetemperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000401
+name: Length [dik]
+name: Länge [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000402
+name: Length [ncit]
+name: Länge [ncit]
+def: "The linear extent in space from one end of something to the other end, or the extent of something from beginning to end." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C25334" xsd:string
+
+[Term]
+id: DIGITRUBBER:000403
+name: Length [pato]
+name: Länge [pato]
+def: "A 1-D extent quality which is equal to the distance between two points." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0000122" xsd:string
+
+[Term]
+id: DIGITRUBBER:000404
+name: Length [om]
+name: Länge [om]
+def: "Length is the amount of space between two geographical points along a curve. It is a base quantity in the International System of Units and other systems of units. Length is speed times time. The metre, a base unit of length in the International System of Units, is defined in terms of speed of light during a certain time interval." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ontology-of-units-of-measure.org/resource/om-2" xsd:string
+property_value: IAO:0000412 "http://www.ontology-of-units-of-measure.org/resource/om-2/Length" xsd:string
+
+[Term]
+id: DIGITRUBBER:000405
+name: Length [ms]
+name: Länge [ms]
+def: "PEFF keyword for the sequence length." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ms.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PEFF_0001006" xsd:string
+
+[Term]
+id: DIGITRUBBER:000406
+name: Length Unit [dik]
+name: Längen Einheit [dik]
+is_a: UO:0000000 ! unit [sd]
+
+[Term]
+id: DIGITRUBBER:000407
+name: Length Unit [uo]
+name: Längen Einheit [uo]
+def: "A unit which is a standard measure of the distance between two points.\" [Wikipedia:Wikipedia]" []
+is_a: UO:0000000 ! unit [sd]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000001" xsd:string
+
+[Term]
+id: DIGITRUBBER:000408
+name: Length Unit [ncit]
+name: Längen Einheit [ncit]
+def: "An indication of the type of unit of measure being used to express a length or distance." []
+is_a: UO:0000000 ! unit [sd]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C42578" xsd:string
+
+[Term]
+id: DIGITRUBBER:000409
+name: millimeter [dik]
+is_a: UO:1000008
+
+[Term]
+id: DIGITRUBBER:000410
+name: millimeter [ncit]
+def: "A metric unit of length equal to one thousandth of a meter (10E-3 meter) or approximately 0.03937 inch." []
+is_a: UO:1000008
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C28251" xsd:string
+
+[Term]
+id: DIGITRUBBER:000411
+name: millimeter [uo]
+def: "A length unit which is equal to one thousandth of a meter or 10^[-3] m.\" [NIST:NIST]" []
+is_a: UO:1000008
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000016" xsd:string
+
+[Term]
+id: DIGITRUBBER:000412
+name: Stamp Distance [dik]
+name: Stempelweg [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000413
+name: Addition Sequence [dik]
+name: Zugabereihenfolge [dik]
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000414
+name: Time of Addition [dik]
+name: Zugabezeitpunkt [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000415
+name: Leistung [dik]
+name: Power [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000416
+name: Leistung [pato]
+name: Power [pato]
+def: "A physical quality inhering in a bearer by virtue of the bearer's rate of doing work." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001024" xsd:string
+
+[Term]
+id: DIGITRUBBER:000417
+name: Leistung [om]
+name: Power [om]
+def: "Power is the time rate at which work is done. It is a derived quantity in the International System of Units. Power is energy divided by time." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ontology-of-units-of-measure.org/resource/om-2" xsd:string
+property_value: IAO:0000412 "http://www.ontology-of-units-of-measure.org/resource/om-2/Power" xsd:string
+
+[Term]
+id: DIGITRUBBER:000418
+name: Electrical Power [dik]
+name: Elektrische Leistung [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000419
+name: Mischzeit [dik]
+name: Mixing Time [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000420
+name: Filling Ratio [dik]
+name: Füllgrad [dik]
+def: "A physical quality which inheres in a bearer by virtue of the ratio of the volume of a substance contained in the bearer and the bearer's own volume." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000421
+name: Mischstufenanzahl [dik]
+name: Number of Mixing Stages [dik]
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000422
+name: Batch [dik]
+name: Charge [dik]
+def: "Product of one mixing operation" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000423
+name: Batch [ncit]
+name: Charge [ncit]
+def: "A quantity of people or things treated or regarded as a group, especially when subdivided from a larger group." []
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C67073" xsd:string
+
+[Term]
+id: DIGITRUBBER:000424
+name: Extruder [dik]
+def: "machine which, through the use of a screw or a hydraulic ram, continuously shapes a material by forcing it through a die or dies" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000425
+name: Einschneckenextruder [dik]
+name: Single Screw Extruder [dik]
+is_a: DIGITRUBBER:000424 ! Extruder [dik]
+
+[Term]
+id: DIGITRUBBER:000426
+name: Pin Extruder [dik]
+name: Stiftextruder [dik]
+is_a: DIGITRUBBER:000424 ! Extruder [dik]
+
+[Term]
+id: DIGITRUBBER:000427
+name: Pin [dik]
+name: Stift [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000428
+name: Schnecke [dik]
+name: Screw [dik]
+def: "rotating member with one or more helical grooves, used to propel rubber along the barrel of an extruder" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000429
+name: Die [dik]
+name: Schablone [dik]
+def: "that part of an extruder through which material is forced, forming a profile of the extrudate" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000430
+name: Extrudat [dik]
+name: Extrudate [dik]
+def: "product of an extrusion process" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000431
+name: Extruder Head [dik]
+name: Extruderkopf [dik]
+def: "that part of an extruder which houses the die and die holder" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000432
+name: Extrudieren [dik]
+name: Extrusion [dik]
+def: "continuous shaping of a material by passage through a die" []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000433
+name: Extrudieren [rex]
+name: Extrusion [rex]
+def: "A transformation in which an atom or group Y connected to two other atoms or groups X and Z is lost from a molecule, leading to a product in which X is bonded to Z, e.g. X-Y-Z --> X-Z + Y." []
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/rex.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/REX_0000100" xsd:string
+
+[Term]
+id: DIGITRUBBER:000434
+name: Extrudieren [chmo]
+name: Extrusion [chmo]
+def: "A process used to create objects of a fixed cross-sectional profile by forcing or drawing a material through a die." []
+is_a: IAO:0000104
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chmo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHMO_0001613" xsd:string
+
+[Term]
+id: DIGITRUBBER:000435
+name: Die Swell [dik]
+name: Spritzquellung [dik]
+def: "difference between the dimensions of the cross-section of an extrudate and the corresponding dimensions of the die orifice, usually quantified as the percentage increase in the crosssectional area" []
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000436
+name: Abzugsgeschwindigkeit [dik]
+name: Haul-off Speed [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000437
+name: Conveyor Belt [dik]
+name: Förderband [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000438
+name: Mass Throughput [dik]
+name: Massedurchsatz [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000439
+name: Druckschwankung [dik]
+name: Pressure Variation [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000440
+name: Geometrieschwankung [dik]
+name: Geometry Variation [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000441
+name: Oberfläche [dik]
+name: Surface [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000442
+name: Oberfläche [ncit]
+name: Surface [ncit]
+def: "The extended two-dimensional outer boundary of a three-dimensional object." []
+is_a: BFO:0000141
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C25245" xsd:string
+
+[Term]
+id: DIGITRUBBER:000443
+name: Oberflächenfehler [dik]
+name: Surface Defect [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000444
+name: Oberflächentemperatur [dik]
+name: Surface Temperature [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000445
+name: Schneckendrehzahl [dik]
+name: Screw Speed [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000446
+name: Druck [dik]
+name: Pressure [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000447
+name: Druck [pato]
+name: Pressure [pato]
+def: "A physical quality that inheres in a bearer by virtue of the bearer's amount of force per unit area it exerts." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001025" xsd:string
+
+[Term]
+id: DIGITRUBBER:000448
+name: Druck [om]
+name: Pressure [om]
+def: "Pressure is the force applied to or distributed over a surface. It is a derived quantity in the International System of Units. Pressure is force divided by area." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ontology-of-units-of-measure.org/resource/om-2" xsd:string
+property_value: IAO:0000412 "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure" xsd:string
+
+[Term]
+id: DIGITRUBBER:000449
+name: Die Geometry [dik]
+name: Schablonengeometrie [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000450
+name: Extrudate Cross Section [dik]
+name: Extrudatquerschnitt [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000451
+name: Sensor [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000452
+name: Sensor [sosa]
+def: "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://www.w3.org/ns/sosa/" xsd:string
+property_value: IAO:0000412 "http://www.w3.org/ns/sosa/Sensor" xsd:string
+
+[Term]
+id: DIGITRUBBER:000453
+name: Sensor [chmo]
+def: "A piece of apparatus that is used to measure a physical quantity." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chmo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHMO_0002793" xsd:string
+
+[Term]
+id: DIGITRUBBER:000454
+name: Temperature Measuring Sword [dik]
+name: Temperaturmessschwert [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000455
+name: Drucksensor [dik]
+name: Pressure Sensor [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000456
+name: Temperature Sensor [dik]
+name: Temperatursensor [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000457
+name: Gearbox [dik]
+name: Getriebe [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000458
+name: Engine [dik]
+name: Motor [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000459
+name: Engine [envo]
+name: Motor [envo]
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/envo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ENVO_01000610" xsd:string
+
+[Term]
+id: DIGITRUBBER:000460
+name: Feeding Roll [dik]
+name: Speisewalze [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000461
+name: Pin Zone [dik]
+name: Stiftzone [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000462
+name: Einzugszone [dik]
+name: Feeding Zone [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000463
+name: Molding Zone [dik]
+name: Werkzeugzone [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000464
+name: Feeding Roll Temperature Control Unit [dik]
+name: Speisewalzen-Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000465
+name: Feeding Roll Temperature [dik]
+name: Speisewalzen-Temperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000466
+name: Schnecken-Temperatursteuergerät [dik]
+name: Screw Temperature Control Unit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000467
+name: Schnecken-Temperatur [dik]
+name: Screw Temperature [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000468
+name: Einzugszonen-Temperatursteuergerät [dik]
+name: Feeding Zone Temperature Control Unit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000469
+name: Einzugszonen-Temperatur [dik]
+name: Feeding Zone Temperature [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000470
+name: Pin Zone Temperature Control Unit [dik]
+name: Stiftzonen-Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000471
+name: Pin Zone Temperature [dik]
+name: Stiftzonen-Temperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000472
+name: Molding Zone Temperature Control Unit [dik]
+name: Werkzeugzonen-Temperatursteuergerät [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000473
+name: Molding Zone Temperature [dik]
+name: Werkzeugzonen-Temperatur [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000474
+name: Vulcanization Time [dik]
+name: Vulkanisationszeit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000475
+name: Crosslink Density [dik]
+name: Vernetzungsdichte [dik]
+def: "number of crosslinks per unit volume or unit mass of vulcanizate" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000476
+name: Vulcanizate [dik]
+name: Vulkanisat [dik]
+def: "product of the vulcanization of a rubber compound" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000477
+name: Crosslink [dik]
+name: Vernetzung [dik]
+def: "chemical bond or atom(s) joining two rubber chains or two parts of the same rubber chain as a result of vulcanization" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000478
+name: Crosslink [ncit]
+name: Vernetzung [ncit]
+def: "Any covalent linkage between two polymers or between two different regions of the same polymer." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C47936" xsd:string
+
+[Term]
+id: DIGITRUBBER:000479
+name: Crosslinking [dik]
+name: Vernetzen [dik]
+def: "〈act of〉 insertion of crosslinks between or within rubber chains to give a network structure" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000480
+name: State of Cure [dik]
+name: Vernetzungsgrad [dik]
+def: "condition of a vulcanizate during the course of vulcanization, measured in terms of its structure or properties" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000481
+name: Vulcanization [dik]
+name: Vulkanisation [dik]
+def: "process, usually involving heat, in which rubber, through a change in its chemical structure (for example, crosslinking), is converted to a condition in which the elastic properties are conferred or re-established or improved or extended over a greater range of temperatures" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000482
+name: Autoclave [dik]
+name: Autoklav [dik]
+def: "pressurized vessel used for vulcanizing rubber in a vapour or gas" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000483
+name: Autoclave[obi]
+name: Autoklav [obi]
+def: "A device that is used to sterilize equipment and supplies by subjecting them to high pressure steam at 121 C or more, typically for 15 to 20 minutes depending on the size of the load and the contents." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0001112" xsd:string
+
+[Term]
+id: DIGITRUBBER:000484
+name: Autoclave [chmo]
+name: Autoklav [chmo]
+def: "A thick-walled steel vessel used during synthesis methods that require both high pressures and high temperatures." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chmo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHMO_0002166" xsd:string
+
+[Term]
+id: DIGITRUBBER:000485
+name: Plateau Cure [dik]
+name: Vulkanisationsplateau [dik]
+def: "type of vulcanization during which the modulus of the vulcanizate proceeds to a maximum and then remains essentially constant for a substantial period at the vulcanization temperature" []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000486
+name: Optimum Cure [dik]
+name: Vulkanisationsoptimum [dik]
+def: "condition of vulcanization required to achieve an acceptable compromise among a number of desired vulcanizate properties or the optimum value of a selected property" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000487
+name: Overcure [dik]
+name: Übervulkanisation [dik]
+def: "state of vulcanization beyond the optimum cure" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000488
+name: Undercure [dik]
+name: Untervulkanisation [dik]
+def: "state of vulcanization less than the optimum cure" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000489
+name: Probe [dik]
+name: Sample [dik]
+def: "one or more items taken from a lot and intended to provide information on the lot and possibly to serve as a basis for a decision on the lot or on the process which had produced it" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000490
+name: Probe [sosa]
+name: Sample [sosa]
+def: "Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://www.w3.org/ns/sosa/" xsd:string
+property_value: IAO:0000412 "http://www.w3.org/ns/sosa/Sample" xsd:string
+
+[Term]
+id: DIGITRUBBER:000491
+name: Probe [nmrcv]
+name: Sample [nmrcv]
+def: "tempdef: A sample is a role that is played by an object of interest in an investigation used to obtain generalizable information about the sample source. defprov: Daniel Schober" []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://nmrML.org/nmrCV" xsd:string
+property_value: IAO:0000412 "http://nmrML.org/nmrCV#NMR:1000457" xsd:string
+
+[Term]
+id: DIGITRUBBER:000492
+name: Prüfkörper [dik]
+name: Test Piece [dik]
+def: "piece of material of appropriate shape and size, prepared so that it is ready for use in a test" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000493
+name: Gummiabfall [dik]
+name: Scrap Rubber [dik]
+def: "raw, compounded, vulcanized or partially vulcanized rubber in the form of end-of-life rubber products or factory scrap" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000494
+name: Factory Scrap [dik]
+name: Produktionsabfall [dik]
+def: "raw, compounded, vulcanized or partially vulcanized rubber rejected or generated as waste during product manufacture and found unsuitable for further use unless recycled" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000495
+name: Physical Object Quality [dik]
+name: Qualität des physischen Objekts [dik]
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001241" xsd:string
+
+[Term]
+id: DIGITRUBBER:000496
+name: Physical Object Quality [pato]
+name: Qualität des physischen Objekts [pato]
+def: "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001241" xsd:string
+
+[Term]
+id: DIGITRUBBER:000497
+name: Physical Quality [dik]
+name: physikalische Qualität [dik]
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001018" xsd:string
+
+[Term]
+id: DIGITRUBBER:000498
+name: Physical Quality [pato]
+name: physikalische Qualität [pato]
+def: "A quality which inheres in a continuant." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001018" xsd:string
+
+[Term]
+id: DIGITRUBBER:000499
+name: Label der Messeinheit [dik]
+name: Measurement Unit Label [dik]
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/IAO_0000003" xsd:string
+
+[Term]
+id: DIGITRUBBER:000500
+name: Label der Messeinheit [pato]
+name: Measurement Unit Label [pato]
+def: "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/iao.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/IAO_0000003" xsd:string
+
+[Term]
+id: DIGITRUBBER:000501
+name: Bezugspunkt-Label [dik]
+name: Datum Label [dik]
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/IAO_0000009" xsd:string
+
+[Term]
+id: DIGITRUBBER:000502
+name: Bezugspunkt-Label [iao]
+name: Datum Label [iao]
+def: "A label is a symbol that is part of some other datum and is used to either partially define the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/iao.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/IAO_0000009" xsd:string
+
+[Term]
+id: DIGITRUBBER:000503
+name: Assay [dik]
+name: Prüfung [dik]
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0000070" xsd:string
+
+[Term]
+id: DIGITRUBBER:000504
+name: Assay [ncit]
+name: Prüfung [ncit]
+def: "A qualitative or quantitative analysis performed to determine the amount of a particular constituent in a sample or the biological or pharmacological properties of a drug." []
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C60819" xsd:string
+
+[Term]
+id: DIGITRUBBER:000505
+name: Assay [obi]
+name: Prüfung [obi]
+def: "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0000070" xsd:string
+
+[Term]
+id: DIGITRUBBER:000506
+name: Density Measurement Assay [dik]
+name: Prüfung zur Dichtemessung [dik]
+def: "An assay with the objective to produce information about the density of the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000507
+name: Mass Density [dik]
+name: Massendichte [dik]
+def: "mass per unit volume of a material, including any voids present" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000508
+name: Mass Density [ncit]
+name: Massendichte [ncit]
+def: "A measure of the compactness of a substance, expressed as its mass per unit volume." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C75762" xsd:string
+
+[Term]
+id: DIGITRUBBER:000509
+name: Mass Density [pato]
+name: Massendichte [pato]
+def: "A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer's mass per unit size." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001019" xsd:string
+
+[Term]
+id: DIGITRUBBER:000510
+name: Mass Density Unit [dik]
+name: Massendichte Einheit [dik]
+is_a: UO:0000182
+
+[Term]
+id: DIGITRUBBER:000511
+name: Mass Density Unit [uo]
+name: Massendichte Einheit [uo]
+def: "A density unit which is a standard measure of the mass of a substance in a given volume.\" [UOC:GVG]" []
+is_a: UO:0000182
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000052" xsd:string
+
+[Term]
+id: DIGITRUBBER:000512
+name: Massendichte Einheit [ncit]
+name: Unit Of Mass Density [ncit]
+def: "An indication of the type of unit of measure being used to express a mass density." []
+is_a: UO:0000182
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C42575" xsd:string
+
+[Term]
+id: DIGITRUBBER:000513
+name: Gram Per Cubic Centimeter [dik]
+name: Gramm pro Kubikzentimeter [dik]
+is_a: UO:1000084
+
+[Term]
+id: DIGITRUBBER:000514
+name: Gram Per Cubic Centimeter [uo]
+name: Gramm pro Kubikzentimeter [uo]
+def: "A mass unit density which is equal to mass of an object in grams divided by the volume in cubic centimeters.\" [UOC:GVG]" []
+is_a: UO:1000084
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000084" xsd:string
+
+[Term]
+id: DIGITRUBBER:000515
+name: Prüfung zur Viskositätsmessung [dik]
+name: Viscosity Measurement Assay [dik]
+def: "An assay with the objective to produce information about the viscosity of the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000516
+name: Mooney Viscosity Measurement Assay [dik]
+name: Prüfung zur Mooney-Viskositätsmessung [dik]
+def: "An assay with the objective to produce information about the Mooney viscosity of the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000517
+name: Viscosity [dik]
+name: Viskosität [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000518
+name: Viscosity [ncit]
+name: Viskosität [ncit]
+def: "The resistance of a liquid to sheer forces and flow." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C75912" xsd:string
+
+[Term]
+id: DIGITRUBBER:000519
+name: Viscosity [pato]
+name: Viskosität [pato]
+def: "A physical quality of a fluid inhering in a bearer by virtue of the bearer's disposition to internal resistance to flow." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0000992" xsd:string
+
+[Term]
+id: DIGITRUBBER:000520
+name: Mooney Viscosity [dik]
+name: Mooney Viskosität [dik]
+def: "measure of the viscosity of a raw rubber or rubber compound, determined using a Mooney shearing-disc viscometer" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000521
+name: Viscosity Unit [dik]
+name: Viskositätseinheit [dik]
+is_a: UO:0000000 ! unit [sd]
+
+[Term]
+id: DIGITRUBBER:000523
+name: Mooney Viscosity Unit [dik]
+name: Mooney Viskositätseinheit [dik]
+def: "A viscosity unit which is a standard measure of the Mooney viscosity." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000524
+name: Mooney Einheit [dik]
+name: Mooney Unit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000525
+name: Quality of a Substance [dik]
+name: Qualität eines Stoffes [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000526
+name: Quality of a Substance [pato]
+name: Qualität eines Stoffes [pato]
+def: "A quality inhering in a bearer by virtue of its constitution." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0002198" xsd:string
+
+[Term]
+id: DIGITRUBBER:000527
+name: Quality of a Liquid [dik]
+name: Qualität einer Flüssigkeit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000528
+name: Quality of a Liquid [pato]
+name: Qualität einer Flüssigkeit [pato]
+def: "A physical quality inhering in an entity exhibiting the physical characteristics of an amorphous (non-crystalline) form of matter between a gas and a solid that has a definite volume, but no definite shape." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001548" xsd:string
+
+[Term]
+id: DIGITRUBBER:000529
+name: Protocol [dik]
+name: Protokoll [dik]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000530
+name: Protocol [ncit]
+name: Protokoll [ncit]
+def: "A rule which guides how an activity should be performed." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C42651" xsd:string
+
+[Term]
+id: DIGITRUBBER:000531
+name: Protocol [obi]
+name: Protokoll [obi]
+def: "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0000272" xsd:string
+
+[Term]
+id: DIGITRUBBER:000532
+name: Protocol [edam]
+name: Protokoll [edam]
+def: "A human-readable collection of information about about how a scientific experiment or analysis was carried out that results in a specific set of data or results used for further analysis or to test a specific hypothesis." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://edamontology.org" xsd:string
+property_value: IAO:0000412 "http://edamontology.org/data_2531" xsd:string
+
+[Term]
+id: DIGITRUBBER:000533
+name: Measurement Protocol [dik]
+name: Messprotokoll [dik]
+def: "A protocol which specifies the conditions, procedures, and instruments used for conducting a measurement assay in a sufficient level of detail to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the measurement assay." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000534
+name: Material Processing Protocol [dik]
+name: Materialverarbeitungsprotokoll [dik]
+def: "A protocol which specifies the conditions, procedures, and instruments used for conducting a material processing in a sufficient level of detail to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the material processing." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000535
+name: Herstellungsvorschrift [dik]
+name: Manufacturing Specification [dik]
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000536
+name: Density Measurement Protocol [dik]
+name: Protokoll zur Dichtemessung [dik]
+def: "A measurement protocol for reliably reproducing the density measurement assay." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000537
+name: Protokoll zur Viskositätsmessung [dik]
+name: Viscosity Measurement Protocol [dik]
+def: "A measurement protocol for reliably reproducing the viscosity measurement assay." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000538
+name: Mooney Viscosity Measurement Protocol [dik]
+name: Protokoll zur Mooney-Viskositätsmessung [dik]
+def: "A viscosity measurement protocol for reliably reproducing the Mooney viscosity measurement assay." []
+is_a: IAO:0000030
+
+[Term]
+id: DIGITRUBBER:000539
+name: Degree Celsius [dik]
+name: Grad Celsius [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000540
+name: Degree Celsius [ncit]
+name: Grad Celsius [ncit]
+def: "A unit of temperature of the temperature scale designed so that the freezing point of water is 0 degrees and the boiling point is 100 degrees at standard atmospheric pressure. The current official definition of the Celsius sets 0.01 C to be at the triple point of water and a degree to be 1/273.16 of the difference in temperature between the triple point of water and absolute zero. One degree Celsius represents the same temperature difference as one Kelvin. [ NCI ]" []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C42559" xsd:string
+
+[Term]
+id: DIGITRUBBER:000541
+name: Degree Celsius [uo]
+name: Grad Celsius [uo]
+def: "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.\" [NIST:NIST]" []
+is_a: UO:1000027
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/UO_0000027" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000027" xsd:string
+
+[Term]
+id: DIGITRUBBER:000542
+name: Degree Celsius [om]
+name: Grad Celsius [om]
+def: "The degree Celsius is a unit of temperature defined as 1 kelvin. The degree Celsius is a derived unit in the International System of Units." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ontology-of-units-of-measure.org/resource/om-2" xsd:string
+property_value: IAO:0000412 "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius" xsd:string
+
+[Term]
+id: DIGITRUBBER:000543
+name: Material Processing [dik]
+name: Materialverarbeitung [dik]
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000544
+name: Material Processing [obi]
+name: Materialverarbeitung [obi]
+def: "A planned process which results in physical changes in a specified input material" []
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0000094" xsd:string
+
+[Term]
+id: DIGITRUBBER:000545
+name: Function [dik]
+name: Funktion [dik]
+is_a: BFO:0000141
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/BFO_0000034" xsd:string
+
+[Term]
+id: DIGITRUBBER:000546
+name: Function [ncit]
+name: Funktion [ncit]
+def: "The normal action performed by a structure or device." []
+is_a: BFO:0000141
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C25518" xsd:string
+
+[Term]
+id: DIGITRUBBER:000547
+name: Function [mi]
+name: Funktion [mi]
+def: "Biological function of a participant or of an interaction." []
+is_a: BFO:0000141
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/mi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/MI_0613" xsd:string
+
+[Term]
+id: DIGITRUBBER:000548
+name: Device [dik]
+name: Gerät [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000549
+name: Device [ncit]
+name: Gerät [ncit]
+def: "An object contrived for a specific purpose." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C62103" xsd:string
+
+[Term]
+id: DIGITRUBBER:000550
+name: Device [obi]
+name: Gerät [obi]
+def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0000968" xsd:string
+
+[Term]
+id: DIGITRUBBER:000551
+name: Measurement Device [dik]
+name: Messgerät [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000552
+name: Measurement Device [ncit]
+name: Messgerät [ncit]
+def: "Any device used to determine the dimension of an object." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C81182" xsd:string
+
+[Term]
+id: DIGITRUBBER:000553
+name: Measurement Device [obi]
+name: Messgerät [obi]
+def: "A device in which a measure function inheres." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0000832" xsd:string
+
+[Term]
+id: DIGITRUBBER:000554
+name: Processed Material [dik]
+name: verarbeitetes Material [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000555
+name: Processed Material [obi]
+name: verarbeitetes Material [obi]
+def: "Is a material entity that is created or changed during material processing." []
+is_a: BFO:0000040
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/OBI_0000047" xsd:string
+
+[Term]
+id: DIGITRUBBER:000556
+name: Mischen [dik]
+name: Mixing [dik]
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000557
+name: Mischen [chmo]
+name: Mixing [chmo]
+def: "The combining of components, particles or layers into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process μst not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system. [ https://doi.org/10.1351/goldbook.M03945 ]" []
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chmo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHMO_0001685" xsd:string
+
+[Term]
+id: DIGITRUBBER:000558
+name: (Mix) [ncit]
+name: Mischen [ncit]
+def: "To bring or combine together or with something else; add as an additional element or part." []
+is_a: BFO:0000015
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C64925" xsd:string
+
+[Term]
+id: DIGITRUBBER:000559
+name: Iodine Adsorption Number [dik]
+name: Jodadsorptionszahl [dik]
+def: "Number of grams of iodine adsorbed per kilogram of carbon black under specified conditions" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000560
+name: Specific Surface [dik]
+name: Spezifische Oberfläche [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000561
+name: Mass Specific Surface [dik]
+name: Massenbezogene spezifische Oberfläche [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000562
+name: Volume Specific Surface [dik]
+name: Volumenbezogene spezifische Oberfläche [dik]
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000563
+name: Oil Absorption Number [dik]
+name: Ölabsorptionszahl [dik]
+def: "The oil absorption number of a carbon black is related to the processing and vulcanizate properties of rubber compounds containing the carbon black" []
+is_a: BFO:0000141
+
+[Term]
+id: DIGITRUBBER:000564
+name: Kinematic Viscosity [dik]
+name: Kinematische Viskosität [dik]
+def: "Kinematic viscosity is the quotient of the dynamic viscosity of the medium and its density." []
+is_a: UO:0000256 ! Viscosity Unit [uo]
+
+[Term]
+id: DIGITRUBBER:000566
+name: Erstarrungspunkt [dik]
+name: Setting Point [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000567
+name: Molecular Weight [dik]
+name: Molekulargewicht [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000568
+name: Molecular Weight [mi]
+name: Molekulargewicht [mi]
+def: "Molecular weight in g/mol, determined from molecular formula or sequence." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/mi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/MI_2025" xsd:string
+
+[Term]
+id: DIGITRUBBER:000569
+name: Acid Value [dik]
+name: Säurezahl‎ [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000570
+name: Melting Range [dik]
+name: Schmelzbereich‎ [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000571
+name: Oil Content [dik]
+name: Öl-Gehalt‎ [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000572
+name: Complex Shear Modulus [dik]
+name: komplexer Schubmodul [dik]
+def: "ratio of the shear stress to the shear strain, where each can be represented by a complex number" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000573
+name: Complex Young’s Modulus [dik]
+name: komplexer Young’s Modul [dik]
+def: "ratio of the normal stress to the normal strain, where each can be represented by a complex number" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000574
+name: Elastic Shear Modulus [dik]
+name: Elastizitätsmodul [dik]
+def: "that component of an applied shear stress which is in phase with the shear strain, divided by the strain" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000575
+name: Elastic Young’s Modulus [dik]
+name: Youngscher Elastizitätsmodul [dik]
+def: "that component of an applied normal stress which is in phase with the normal strain, divided by the strain" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000576
+name: Loss Shear Modulus [dik]
+name: Verlustmodul [dik]
+def: "that component of an applied shear stress which is in quadrature (90° out of phase) with the shear strain, divided by the strain" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000577
+name: Loss Young’s Modulus [dik]
+name: Young’sches Verlustmodul [dik]
+def: "that component of an applied normal stress which is in quadrature (90° out of phase) with the normal strain, divided by the strain" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000578
+name: Modul [dik]
+name: Modulus [dik]
+def: "measure of stiffness under specified conditions of deformation" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000579
+name: Tan Delta [dik]
+name: Tangens delta [dik]
+def: "ratio of the viscous modulus to the elastic modulus" []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000580
+name: Viscometer [dik]
+name: Viskosimeter [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000581
+name: Mooney Shearing-Disc Viscometer [dik]
+name: Mooney-Scherscheibenviskosimeter [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000582
+name: Curemeter [dik]
+name: Rheometer [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000583
+name: Oscillating-Disc Curemeter [dik]
+name: oszillierendes Scheibenrheometer [dik]
+def: "type of curemeter in which the force applied to the rubber compound is produced by an oscillating disc embedded in a test sample which is contained under pressure in a sealed cavity" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000584
+name: Rotorless Curemeter [dik]
+name: rotorloser Rheometer [dik]
+def: "type of curemeter in which the force applied to the rubber compound is produced by the oscillation of one of the two dies forming the cavity in which the test sample is enclosed" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000585
+name: Vulcameter [dik]
+name: Vulkameter [dik]
+def: "device that measures the progress of vulcanization in a test sample at the vulcanizing temperature" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000586
+name: Platen Press [dik]
+name: Plattenpresse [dik]
+def: "press having two or more super-imposed heated platens between which moulds are pressed" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000587
+name: Platen [dik]
+name: Platte [dik]
+def: "flat metal plate (or chest) which applies heat and pressure to one or more mould(s) in a press" []
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000588
+name: Ethylidene Norbornene [dik]
+name: Ethylidennorbornen [dik]
+is_a: BFO:0000040
+
+[Term]
+id: DIGITRUBBER:000589
+name: Concentration Measurement Assay [dik]
+name: Prüfung zur Konzentrationsmessung [dik]
+def: "An assay with the objective to produce information about the concentration of a specific substance in the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000590
+name: Ethylene Concentration Measurement Assay [dik]
+name: Prüfung zur Ethylen-Konzentrationsmessung [dik]
+def: "A concentration measurement assay with the objective to produce information about the concentration of ethylene in the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000591
+name: Ethylidene Norbornene Concentration Measurement Assay [dik]
+name: Prüfung zur Ethylidennorbornen-Konzentrationsmessung [dik]
+def: "A concentration measurement assay with the objective to produce information about the concentration of ethylidene norbornene in the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000592
+name: Molecular Weight Distribution Measurement Assay [dik]
+name: Prüfung zur Molekulargewichtsverteilung [dik]
+def: "An assay with the objective to produce information about the molecular weight distribution of the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: BFO:0000015
+
+[Term]
+id: DIGITRUBBER:000593
+name: Concentration Measurement Protocol [dik]
+name: Protokoll zur Konzentrationsmessung [dik]
+def: "A measurement protocol for reliably reproducing the concentration measurement assay." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000594
+name: Ethylene Concentration Measurement Protocol [dik]
+name: Protokoll zur Ethylen-Konzentrationsmessung [dik]
+def: "A concentration measurement protocol for reliably reproducing the ethylene concentration measurement assay." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000595
+name: Ethylidene Norbornene Concentration Measurement Protocol [dik]
+name: Protokoll zur Ethylidennorbornen-Konzentrationsmessung [dik]
+def: "A concentration measurement protocol for reliably reproducing the ethylidene norbornene concentration measurement assay." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000596
+name: Molecular Weight Distribution Measurement Protocol [dik]
+name: Protokoll zur Molekulargewichtsverteilung [dik]
+def: "A measurement protocol for reliably reproducing the molecular weight distribution measurement assay." []
+is_a: IAO:0000104
+
+[Term]
+id: DIGITRUBBER:000597
+name: Ethylene Group [dik]
+is_a: CHEBI:33471
+
+[Term]
+id: DIGITRUBBER:000598
+name: Hydrocarbylene Group [dik]
+is_a: CHEBI:51422
+
+[Term]
+id: DIGITRUBBER:000599
+name: Hydrocarbylene Group [chebi]
+def: "A bivalent group formed by removing two hydrogen atoms from a hydrocarbon, the free valencies of which are not engaged in a double bond." []
+is_a: CHEBI:51422
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_33471" xsd:string
+
+[Term]
+id: DIGITRUBBER:000600
+name: Organodiyl Group [dik]
+is_a: CHEBI:51446
+
+[Term]
+id: DIGITRUBBER:000601
+name: Organodiyl Group [chebi]
+def: "Any organic substituent group, regardless of functional type, having two free valences at carbon atom(s)." []
+is_a: CHEBI:51446
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_51422" xsd:string
+
+[Term]
+id: DIGITRUBBER:000602
+name: Organic Divalent Group [dik]
+is_a: CHEBI:33247
+
+[Term]
+id: DIGITRUBBER:000603
+name: Organic Group [dik]
+name: Organik-Gruppe [dik]
+is_a: CHEBI:24433
+
+[Term]
+id: DIGITRUBBER:000604
+name: Organic Group [chebi]
+name: Organik-Gruppe [chebi]
+def: "Any substituent group or skeleton containing carbon." []
+is_a: CHEBI:24433
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_33247" xsd:string
+
+[Term]
+id: DIGITRUBBER:000605
+name: Group [dik]
+name: Gruppe [dik]
+is_a: CHEBI:24431
+
+[Term]
+id: DIGITRUBBER:000606
+name: Group [ncit]
+name: Gruppe [ncit]
+def: "Any number of entities (members) considered as a unit." []
+is_a: CHEBI:24431
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C43359" xsd:string
+
+[Term]
+id: DIGITRUBBER:000607
+name: Group [chebi]
+name: Gruppe [chebi]
+def: "A defined linked collection of atoms or a single atom within a molecular entity." []
+is_a: CHEBI:24431
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chebi.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHEBI_24433" xsd:string
+
+[Term]
+id: DIGITRUBBER:000608
+name: Group [shacl]
+name: Gruppe [shacl]
+def: "Can be used to link to a property group to indicate that a property shape belongs to a group of related property shapes." []
+is_a: CHEBI:24431
+property_value: IAO:0000119 "http://www.w3.org/ns/shacl#" xsd:string
+property_value: IAO:0000412 "http://www.w3.org/ns/shacl#group" xsd:string
+
+[Term]
+id: DIGITRUBBER:000609
+name: Percent [dik]
+name: Prozent [dik]
+is_a: UO:0000190
+
+[Term]
+id: DIGITRUBBER:000610
+name: Percent [uo]
+name: Prozent [uo]
+def: "A dimensionless ratio unit which denotes numbers as fractions of 100.\" [Wikipedia:Wikipedia]" []
+is_a: UO:0000190
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000187" xsd:string
+
+[Term]
+id: DIGITRUBBER:000611
+name: Percent [om]
+name: Prozent [om]
+def: "The percent is a unit of dimension one defined as 1/100." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://www.ontology-of-units-of-measure.org/resource/om-2" xsd:string
+property_value: IAO:0000412 "http://www.ontology-of-units-of-measure.org/resource/om-2/percent" xsd:string
+
+[Term]
+id: DIGITRUBBER:000612
+name: Ratio [dik]
+name: Verhältnis [dik]
+is_a: UO:0000186
+
+[Term]
+id: DIGITRUBBER:000613
+name: Ratio [ncit]
+name: Verhältnis [ncit]
+def: "Quotient of quantities of the same kind for different components within the same system." []
+is_a: UO:0000186
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C44256" xsd:string
+
+[Term]
+id: DIGITRUBBER:000614
+name: Ratio [uo]
+name: Verhältnis [uo]
+def: "A dimensionless ratio unit which, given a pair of quantities a and b, for which b is a multiple of a, denotes b by giving the multiplier (coefficient) c for a to result in b.\" [UOB:LKSR]" []
+is_a: UO:0000190
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0010006" xsd:string
+
+[Term]
+id: DIGITRUBBER:000615
+name: Ratio [uo]
+name: Verhältnis [uo]
+def: "A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.\" [Wikipedia:Wikipedia]" []
+is_a: UO:0000186
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000190" xsd:string
+
+[Term]
+id: DIGITRUBBER:000616
+name: Ratio [ms]
+name: Verhältnis [ms]
+def: "A ratio is a data item which is formed with two numbers r and s is written r/s, where r is the numerator and s is the denominator. The ratio of r to s is equivalent to the quotient r/s." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ms.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/STATO_0000184" xsd:string
+
+[Term]
+id: DIGITRUBBER:000617
+name: Dimensionless Unit [dik]
+name: dimensionslose Einheit [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000618
+name: Dimensionless Unit [ms]
+name: dimensionslose Einheit [ms]
+def: "A unit which is a standard measure of physical quantity consisting of only a numerical number without any units.\" [Wikipedia:Wikipedia]" []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ms.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000186" xsd:string
+
+[Term]
+id: DIGITRUBBER:000619
+name: Mass Percentage [dik]
+name: Massenanteil [dik]
+is_a: UO:0000051
+
+[Term]
+id: DIGITRUBBER:000620
+name: Mass Percentage [uo]
+name: Massenanteil [uo]
+def: "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.\" [Wikipedia:Wikipedia]" []
+is_a: UO:0000051
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000163" xsd:string
+
+[Term]
+id: DIGITRUBBER:000621
+name: Volume Percentage [dik]
+name: Volumenprozent [dik]
+is_a: UO:0000205
+
+[Term]
+id: DIGITRUBBER:000622
+name: Volume Percentage [uo]
+name: Volumenprozent [uo]
+def: "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.\" [UOC:GVG]" []
+is_a: UO:0000205
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000165" xsd:string
+
+[Term]
+id: DIGITRUBBER:000623
+name: Concentration of [dik]
+name: Konzentration von [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000624
+name: Concrentration [pato]
+name: Konzentration [pato]
+def: "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0000033" xsd:string
+
+[Term]
+id: DIGITRUBBER:000625
+name: Concrentration [edam]
+name: Konzentration [edam]
+def: "The concentration of a chemical compound." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://edamontology.org" xsd:string
+property_value: IAO:0000412 "http://edamontology.org/data_2140" xsd:string
+
+[Term]
+id: DIGITRUBBER:000626
+name: Concrentration [chmo]
+name: Konzentration [chmo]
+def: "Experimental method output expressing the contribution of one constituent to the composition of a mixture." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/chmo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/CHMO_0002820" xsd:string
+
+[Term]
+id: DIGITRUBBER:000627
+name: Concrentration [ncit]
+name: Konzentration [ncit]
+def: "The quantity of a substance per unit volume or weight; a measure of the amount of substance present in a unit amount of mixture, particularly, the amount of solute dissolved in a solvent. The amounts can be expressed as moles, masses, volumes, or parts." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/NCIT_C41185" xsd:string
+
+[Term]
+id: DIGITRUBBER:000628
+name: Concrentration [ecso]
+name: Konzentration [ecso]
+def: "the strength of a solution; number of molecules of a substance in a given volume" []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.dataone.org/odo/ECSO8.owl" xsd:string
+property_value: IAO:0000412 "http://purl.dataone.org/odo/ECSO_00001120" xsd:string
+
+[Term]
+id: DIGITRUBBER:000629
+name: Molecular Quality [dik]
+name: molekulare Qualität [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000630
+name: Molecular Quality [pato]
+name: molekulare Qualität [pato]
+def: "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0002182" xsd:string
+
+[Term]
+id: DIGITRUBBER:000631
+name: Ethylen-Konzentration [dik]
+name: Ethylene Concentration [dik]
+def: "A concentration of ethylene inhering in a substance by virtue of the amount of the bearer's there is mixed with ethylene." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000632
+name: Ethylidene Norbornene Concentration [dik]
+name: Ethylidennorbornen-Konzentration [dik]
+def: "A concentration of ethylidene norbornene inhering in a substance by virtue of the amount of the bearer's there is mixed with ethylidene norbornene." []
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000633
+name: Ethylidene Group [dik]
+name: Ethylidengruppe [dik]
+is_a: CHEBI:51422
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/CHEBI_29853" xsd:string
+
+[Term]
+id: DIGITRUBBER:000634
+name: Quality of a Solid [dik]
+name: Qualität eines Festkörpers [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000635
+name: Quality of a Solid [pato]
+name: Qualität eines Festkörpers [pato]
+def: "A physical quality inhering in a bearer by virtue of the bearer's exhibiting the physical characteristics of an entity characterized by particles arranged such that their shape and volume are relatively stable." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001546" xsd:string
+
+[Term]
+id: DIGITRUBBER:000636
+name: Optical Quality [dik]
+name: optische Qualität [dik]
+is_a: BFO:0000019
+
+[Term]
+id: DIGITRUBBER:000637
+name: Optical Quality [pato]
+name: optische Qualität [dik]
+def: "An EM radiation quality in which the EM radiation is within the fiat range of the spectrum visible deemed to be light." []
+is_a: BFO:0000019
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/pato.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/PATO_0001300" xsd:string
+
+[Term]
+id: UO:0000000
+name: einheit [hsh]
+name: einheit [ncti]
+name: einheit [sd]
+name: einheit [uo]
+name: unit [hsh]
+name: unit [ncti]
+name: unit [sd]
+name: unit [uo]
+def: "A property representing the unit of measure in which a nutrient or food component is typically expressed, ex., gram (g), minigram (mg), microgram (mcg), joule, or kilojoule." []
+def: "A single system element (e.g., extruder 1, tool 1) within an entity sub-group in the system under investigation." []
+def: "A single undivided thing occurring in the composition of something else." []
+def: "A unit of measurement is a standardized quantity of a physical quality.\" [Wikipedia:Wikipedia]" []
+def: "Class designed to distinguish the different types of units that are available in variables from datasets or parameters" []
+def: "The property used in conjunction with a nutrient or food component, typically expressed in gram (g), milligram (mg), microgram (mcg), joule, or kilojoule." []
+is_a: IAO:0000030
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C44278" xsd:string
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_C68553" xsd:string
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/NCIT_P355" xsd:string
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/UO_0000000" xsd:string
+property_value: IAO:0000119 "https://w3id.org/okn/o/sd#Unit" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ncit.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "https://w3id.org/okn/o/sd" xsd:string
+
+[Term]
+id: UO:0000046
+name: prefix
+is_a: IAO:0000030
+
+[Term]
+id: UO:0000256
+name: Viscosity Unit [uo]
+name: Viskositätseinheit [uo]
+def: "A unit which is a standard measure of the internal resistance of fluids to flow.\" [UOC:GVG]" []
+is_a: UO:0000000 ! unit [sd]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_0000256" xsd:string
+
+[Term]
+id: UO:01200023
+name: Kinematic Viscosity [uo]
+name: Kinematische Viskosität [uo]
+def: "The ratio of the dynamic viscosity (μ) over the density of the fluid (ρ), which is noted as (length)^2/time. https://en.wikipedia.org/wiki/Viscosity#Kinematic_viscosity" []
+is_a: UO:0000256 ! Viscosity Unit [uo]
+property_value: IAO:0000119 "http://purl.obolibrary.org/obo/uo.owl" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/UO_01200023" xsd:string
+
+[Term]
+id: http://example.com/B6C3F1
+name: B6C3F1
+def: "An inbred strain of mouse used in many scientific investigations." [] {http://purl.obolibrary.org/obo/IAO_0000119="James A. Overton"}
+is_a: NCBITaxon:10090
+disjoint_from: http://example.com/F344N ! F 344/N
+property_value: IAO:0000117 "James A. Overton" xsd:string
+property_value: seeAlso http://jaxmice.jax.org/strain/100010.html
+
+[Term]
+id: http://example.com/F344N
+name: F 344/N
+def: "An inbred strain of rat used in many scientific investigations." [] {http://purl.obolibrary.org/obo/IAO_0000119="James A. Overton"}
+is_a: NCBITaxon:10116
+property_value: IAO:0000117 "James A. Overton" xsd:string
+property_value: seeAlso http://www.informatics.jax.org/external/festing/rat/docs/F344.shtml
 
