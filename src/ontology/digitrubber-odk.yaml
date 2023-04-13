@@ -1,4 +1,6 @@
 id: digitrubber
+uribase: https://www.tib.eu/
+#uribase_suffix: ontology by default project id digitrubber
 title: "DigitRubber Ontology"
 github_org: vyasakhilesh
 repo: digitrubber

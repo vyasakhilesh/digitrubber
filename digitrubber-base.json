@@ -1,6 +1,6 @@
 {
   "graphs" : [ {
-    "id" : "http://purl.obolibrary.org/obo/digitrubber/digitrubber-base.json",
+    "id" : "https://www.tib.eu//digitrubber/digitrubber-base.json",
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/elements/1.1/type",
@@ -16,12 +16,12 @@
         "val" : "DigitRubber Ontology"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "13:04:2023 09:14"
+        "val" : "13:04:2023 12:58"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
         "val" : "2023-04-13"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-13/digitrubber-base.json"
+      "version" : "https://www.tib.eu//digitrubber/releases/2023-04-13/digitrubber-base.json"
     },
     "nodes" : [ {
       "id" : "http://example.com/rat-1234",

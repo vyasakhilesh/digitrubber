@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/digitrubber/digitrubber-full.owl#"
-     xml:base="http://purl.obolibrary.org/obo/digitrubber/digitrubber-full.owl"
+<rdf:RDF xmlns="https://www.tib.eu//digitrubber/digitrubber-full.owl#"
+     xml:base="https://www.tib.eu//digitrubber/digitrubber-full.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,12 +22,12 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/digitrubber/digitrubber-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-13/digitrubber-full.owl"/>
+    <owl:Ontology rdf:about="https://www.tib.eu//digitrubber/digitrubber-full.owl">
+        <owl:versionIRI rdf:resource="https://www.tib.eu//digitrubber/releases/2023-04-13/digitrubber-full.owl"/>
         <terms:description>DigitRubber Ontology</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>DigitRubber Ontology</terms:title>
-        <oboInOwl:date>13:04:2023 11:21</oboInOwl:date>
+        <oboInOwl:date>13:04:2023 12:58</oboInOwl:date>
         <owl:versionInfo>2023-04-13</owl:versionInfo>
     </owl:Ontology>
     

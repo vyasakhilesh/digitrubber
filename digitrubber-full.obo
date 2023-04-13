@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: digitrubber/releases/2023-04-13/digitrubber-full.owl
-date: 13:04:2023 11:21
+data-version: https://www.tib.eu//digitrubber/releases/2023-04-13/digitrubber-full.owl
+date: 13:04:2023 12:58
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -11,7 +11,7 @@ subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 synonymtypedef: IUPAC_NAME ""
-ontology: digitrubber/digitrubber-full
+ontology: https://www.tib.eu//digitrubber/digitrubber-full.owl
 property_value: http://purl.org/dc/terms/description "DigitRubber Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "DigitRubber Ontology" xsd:string

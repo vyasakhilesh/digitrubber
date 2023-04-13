@@ -17,20 +17,20 @@ components:
 3) Add the component to your catalog file (src/ontology/catalog-v001.xml)
 
 ```
-  <uri name="http://purl.obolibrary.org/obo/digitrubber/components/your-component-name.owl" uri="components/your-component-name.owl"/>
+  <uri name="https://www.tib.eu//digitrubber/components/your-component-name.owl" uri="components/your-component-name.owl"/>
 ```
 
 4) Add the component to the edit file (src/ontology/digitrubber-edit.obo)
 for .obo formats: 
 
 ```
-import: http://purl.obolibrary.org/obo/digitrubber/components/your-component-name.owl
+import: https://www.tib.eu//digitrubber/components/your-component-name.owl
 ```
 
 for .owl formats: 
 
 ```
-Import(<http://purl.obolibrary.org/obo/digitrubber/components/your-component-name.owl>)
+Import(<https://www.tib.eu//digitrubber/components/your-component-name.owl>)
 ```
 
 5) Refresh your repo by running `sh run.sh make update_repo` - this should create a new file in src/ontology/components.
