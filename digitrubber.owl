@@ -22,12 +22,21 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+<<<<<<< HEAD
     <owl:Ontology rdf:about="https://www.tib.eu//digitrubber.owl">
         <owl:versionIRI rdf:resource="https://www.tib.eu//digitrubber/releases/2023-04-13/digitrubber.owl"/>
         <terms:description>DigitRubber Ontology</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>DigitRubber Ontology</terms:title>
         <oboInOwl:date>13:04:2023 12:58</oboInOwl:date>
+=======
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/digitrubber.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-13/digitrubber.owl"/>
+        <terms:description>DigitRubber Ontology</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <terms:title>DigitRubber Ontology</terms:title>
+        <oboInOwl:date>13:04:2023 11:21</oboInOwl:date>
+>>>>>>> main
         <owl:versionInfo>2023-04-13</owl:versionInfo>
     </owl:Ontology>
     
