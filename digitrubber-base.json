@@ -16,7 +16,7 @@
         "val" : "DigitRubber Ontology"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "14:04:2023 13:03"
+        "val" : "14:04:2023 13:17"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
         "val" : "2023-04-14"
