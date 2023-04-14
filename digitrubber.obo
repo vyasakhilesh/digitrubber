@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2023-04-13
-date: 13:04:2023 14:39
+data-version: releases/2023-04-14
+date: 14:04:2023 13:02
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -15,7 +15,7 @@ ontology: digitrubber
 property_value: http://purl.org/dc/terms/description "DigitRubber Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "DigitRubber Ontology" xsd:string
-property_value: owl:versionInfo "2023-04-13" xsd:string
+property_value: owl:versionInfo "2023-04-14" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008

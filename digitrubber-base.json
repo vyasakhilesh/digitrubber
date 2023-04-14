@@ -16,12 +16,12 @@
         "val" : "DigitRubber Ontology"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "13:04:2023 14:40"
+        "val" : "14:04:2023 13:03"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-04-13"
+        "val" : "2023-04-14"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-13/digitrubber-base.json"
+      "version" : "http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-14/digitrubber-base.json"
     },
     "nodes" : [ {
       "id" : "http://example.com/rat-1234",

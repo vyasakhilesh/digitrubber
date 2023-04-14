@@ -23,12 +23,12 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/digitrubber.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-13/digitrubber.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/digitrubber/releases/2023-04-14/digitrubber.owl"/>
         <terms:description>DigitRubber Ontology</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>DigitRubber Ontology</terms:title>
-        <oboInOwl:date>13:04:2023 14:39</oboInOwl:date>
-        <owl:versionInfo>2023-04-13</owl:versionInfo>
+        <oboInOwl:date>14:04:2023 13:02</oboInOwl:date>
+        <owl:versionInfo>2023-04-14</owl:versionInfo>
     </owl:Ontology>
     
 
