@@ -51,7 +51,6 @@ fi
 
 VOLUME_BIND=$PWD/../../:/work
 WORK_DIR=/work/src/ontology
-SSH_BIND=/home/avyas/.ssh/:/root/.ssh
 
 if [ -n "$ODK_BINDS" ]; then
     VOLUME_BIND="$VOLUME_BIND,$ODK_BINDS"
@@ -66,8 +65,7 @@ if [ -n "$USE_SINGULARITY" ]; then
         docker://obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
 else
     BIND_OPTIONS="-v $(echo $VOLUME_BIND | sed 's/,/ -v /')"
-    BIND_OPTIONS1="-v $(echo $SSH_BIND | sed 's/,/ -v /')"
-    docker run $ODK_DOCKER_OPTIONS $BIND_OPTIONS $BIND_OPTIONS1 -w $WORK_DIR \
+    docker run $ODK_DOCKER_OPTIONS $BIND_OPTIONS -w $WORK_DIR \
         -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" \
         --rm -ti obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
 fi
