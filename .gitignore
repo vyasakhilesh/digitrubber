@@ -1,6 +1,8 @@
 .DS_Store
+.ipynb_checkpoints
 semantic.cache
 bin/
+nohup.out
 
 *.tmp
 *.tmp.obo
@@ -29,6 +31,8 @@ src/ontology/simple_seed.txt
 src/ontology/patterns
 src/ontology/merged-digitrubber-edit.owl
 
+template_analysis/excels/*.*
+template_analysis/csvs/*.*
 src/ontology/target/
 src/ontology/tmp/*
 !src/ontology/tmp/README.md
