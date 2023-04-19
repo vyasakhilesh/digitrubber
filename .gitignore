@@ -33,6 +33,7 @@ src/ontology/merged-digitrubber-edit.owl
 
 template_analysis/excels/*.*
 template_analysis/csvs/*.*
+template_analysis/csvs_close_label/*.*
 src/ontology/target/
 src/ontology/tmp/*
 !src/ontology/tmp/README.md
